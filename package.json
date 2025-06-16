@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sowahm808/GFHarvestBackend.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +22,11 @@
   },
   "devDependencies": {
     "jest": "^29.5.0",
-    "supertest": "^6.3.3"
-  }
+    "supertest": "^6.3.3",
+    "nodemon": "^3.1.10"
+  },
+  "bugs": {
+    "url": "https://github.com/sowahm808/GFHarvestBackend/issues"
+  },
+  "homepage": "https://github.com/sowahm808/GFHarvestBackend#readme"
 }
