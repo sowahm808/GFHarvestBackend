@@ -19,6 +19,8 @@ node src/index.js
 - `GET  /api/users/me` – Retrieve the current user's profile.
 - `POST /api/checkins` – Submit a check-in entry.
 - `GET  /api/checkins/:childId` – Get check-ins for a specific child.
+- `POST /api/mental-status` – Submit a mental status entry.
+- `GET  /api/mental-status/:childId` – Get mental status logs for a child.
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 
