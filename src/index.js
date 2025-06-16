@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-require('./config/firebase');
+require('./config/firebase'); // make sure this file exists
 
 const checkinsRoutes = require('./routes/checkins');
 const usersRoutes = require('./routes/users');
