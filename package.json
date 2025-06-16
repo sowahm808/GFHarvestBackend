@@ -1,10 +1,12 @@
 {
   "name": "gfharvestbackend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for Kids Faith Tracker",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -13,20 +15,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^4.18.2",
-    "firebase-admin": "^11.10.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "jest": "^29.5.0",
-    "supertest": "^6.3.3",
-    "nodemon": "^3.1.10"
-  },
   "bugs": {
     "url": "https://github.com/sowahm808/GFHarvestBackend/issues"
   },
-  "homepage": "https://github.com/sowahm808/GFHarvestBackend#readme"
+  "homepage": "https://github.com/sowahm808/GFHarvestBackend#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^11.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
