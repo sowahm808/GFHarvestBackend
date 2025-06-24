@@ -23,6 +23,9 @@ node src/index.js
 - `GET  /api/mental-status/:childId` – Get mental status logs for a child.
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
+The `authMiddleware` verifies the token and attaches the authenticated user's
+claims to `req.user`. The optional `roleGuard` middleware restricts access to
+routes based on custom `role` claims (`parent`, `child`, or `mentor`).
 
 ## Testing
 

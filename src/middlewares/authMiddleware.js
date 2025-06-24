@@ -8,7 +8,9 @@ async function authMiddleware(req, res, next) {
   const token = authHeader.split(' ')[1];
   try {
     const decoded = await admin.auth().verifyIdToken(token);
-    req.user = decoded;
+    // get custom claims in case the token doesn't include them yet
+    const userRecord = await admin.auth().getUser(decoded.uid);
+    req.user = { ...decoded, ...userRecord.customClaims };
     next();
   } catch (err) {
     console.error('Auth error', err);
