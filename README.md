@@ -24,6 +24,11 @@ node src/index.js
 - `GET  /api/children/:childId` – Get a child's profile and mentors.
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
+- `GET  /api/quizzes/today` – Get today’s quiz.
+- `POST /api/quizzes/submit` – Submit quiz answers.
+- `GET  /api/quizzes/history/:childId` – Quiz history.
+- `POST /api/essays` – Create or update essay status.
+- `GET  /api/essays/:childId` – Get essay progress.
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 The `authMiddleware` verifies the token and attaches the authenticated user's

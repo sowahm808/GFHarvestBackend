@@ -30,13 +30,13 @@
  - [x] GET `/api/mental-status/:childId` – Retrieve mental logs
 
 ## 📖 Bible Quizzes
-- [ ] GET `/api/quizzes/today` – Get today’s quiz
-- [ ] POST `/api/quizzes/submit` – Submit quiz answers
-- [ ] GET `/api/quizzes/history/:childId` – Quiz history
+- [x] GET `/api/quizzes/today` – Get today’s quiz
+- [x] POST `/api/quizzes/submit` – Submit quiz answers
+- [x] GET `/api/quizzes/history/:childId` – Quiz history
 
 ## 📝 Essays
-- [ ] POST `/api/essays` – Create or update essay status
-- [ ] GET `/api/essays/:childId` – Get essay progress
+- [x] POST `/api/essays` – Create or update essay status
+- [x] GET `/api/essays/:childId` – Get essay progress
 
 ## 📚 School Work
 - [ ] POST `/api/schoolwork` – Submit score and help flag

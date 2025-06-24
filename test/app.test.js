@@ -38,6 +38,35 @@ describe('Auth middleware', () => {
     expect(res.statusCode).toEqual(401);
   });
 
+  it('should reject unauthorized today quiz request', async () => {
+    const res = await request(app).get('/api/quizzes/today');
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized quiz submission', async () => {
+    const res = await request(app)
+      .post('/api/quizzes/submit')
+      .send({ childId: 'c1', quizId: 'q1', answers: [] });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized quiz history request', async () => {
+    const res = await request(app).get('/api/quizzes/history/c1');
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized essay update', async () => {
+    const res = await request(app)
+      .post('/api/essays')
+      .send({ childId: 'c1', status: 'started' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized essay progress request', async () => {
+    const res = await request(app).get('/api/essays/c1');
+    expect(res.statusCode).toEqual(401);
+  });
+
   it('should reject unauthorized check-in submission', async () => {
     const res = await request(app)
       .post('/api/checkins')
