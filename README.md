@@ -4,8 +4,10 @@ This repository contains a Node.js Express backend integrated with Firebase Admi
 
 ## Setup
 
-1. Copy `.env.example` to `.env`. Set `GOOGLE_APPLICATION_CREDENTIALS` to the full path of your Firebase service account JSON and update the `FIREBASE_PROJECT_ID`.
-2. Install dependencies with `npm install` (internet access required).
+1. Copy `.env.example` to `.env`.
+   - `GOOGLE_APPLICATION_CREDENTIALS` should point to your Firebase service account JSON file.
+   - `FIREBASE_PROJECT_ID` must match your Firebase project.
+2. Install dependencies with `npm install` (requires internet access).
 3. Start the development server:
 
 ```bash
@@ -36,6 +38,10 @@ node src/index.js
 - `POST /api/points/grant` – Grant points.
 - `GET  /api/points/:childId` – Get points for a child.
 - `GET  /api/groups/:groupId/points` – Get total points for a group.
+- `POST /api/groups/create` – Create a group (max 5 members).
+- `POST /api/groups/add-member` – Add a child to a group.
+- `GET  /api/groups/:groupId` – View group info.
+- `GET  /api/groups` – List all groups (admin only).
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 The `authMiddleware` verifies the token and attaches the authenticated user's
@@ -44,7 +50,11 @@ routes based on custom `role` claims (`parent`, `child`, or `mentor`).
 
 ## Testing
 
-Run `npm test` once you have added test cases.
+This project uses **Jest**. After installing dependencies run:
+
+```bash
+npm test
+```
 
 ## Roadmap
 

@@ -52,10 +52,10 @@
 - [x] GET `/api/groups/:groupId/points` – Group total points
 
 ## 👥 Groups
-- [ ] POST `/api/groups/create` – Create group (max 5 members)
-- [ ] POST `/api/groups/add-member` – Add child to group
-- [ ] GET `/api/groups/:groupId` – View group info and members
-- [ ] GET `/api/groups` – List all groups (admin use)
+- [x] POST `/api/groups/create` – Create group (max 5 members)
+- [x] POST `/api/groups/add-member` – Add child to group
+- [x] GET `/api/groups/:groupId` – View group info and members
+- [x] GET `/api/groups` – List all groups (admin use)
 
 ## 🔔 Notifications (Future Phase)
 - [ ] Trigger email or in-app alert for bullying flags
@@ -63,8 +63,8 @@
 - [ ] Reminder jobs for quiz, essay, project deadlines
 
 ## 🧪 Testing
-- [ ] Setup Jest or Mocha/Chai for unit tests
-- [ ] Write test cases for core routes and utilities
+ - [x] Setup Jest or Mocha/Chai for unit tests
+ - [ ] Write test cases for core routes and utilities
 
 ## 📄 Documentation
 - [ ] Create OpenAPI/Swagger spec for all endpoints
