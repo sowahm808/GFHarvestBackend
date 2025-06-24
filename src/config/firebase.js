@@ -1,27 +1,42 @@
+// config/firebase.js
 const admin = require('firebase-admin');
 const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
 
-// During tests the Firebase module is mocked, so skip initialization.
+let firebaseServices = {};
+
 if (process.env.NODE_ENV !== 'test') {
   const serviceAccountPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
   if (!serviceAccountPath) {
     throw new Error(
-      'GOOGLE_APPLICATION_CREDENTIALS is not set. Did you copy .env.example to .env and set the path to your Firebase service account key?'
+      'GOOGLE_APPLICATION_CREDENTIALS is not set. Create a .env file and specify your Firebase key path.'
     );
   }
 
   const resolvedPath = path.resolve(serviceAccountPath);
+
   if (!fs.existsSync(resolvedPath)) {
-    throw new Error(`Service account file not found at: ${resolvedPath}`);
+    throw new Error(`Firebase service account file not found at: ${resolvedPath}`);
   }
 
+  const serviceAccount = require(resolvedPath);
+
   admin.initializeApp({
-    credential: admin.credential.cert(require(resolvedPath)),
+    credential: admin.credential.cert(serviceAccount),
     projectId: process.env.FIREBASE_PROJECT_ID,
   });
+
+  firebaseServices = {
+    auth: admin.auth(),
+    firestore: admin.firestore(),
+    messaging: admin.messaging?.(),
+    storage: admin.storage?.()
+  };
 }
 
-module.exports = admin;
+module.exports = {
+  admin,
+  ...firebaseServices
+};
