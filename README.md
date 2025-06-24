@@ -27,3 +27,7 @@ Authentication is performed via Firebase ID tokens passed in the `Authorization`
 ## Testing
 
 Run `npm test` once you have added test cases.
+
+## Roadmap
+
+See [TODO.md](TODO.md) for planned features and tasks.
