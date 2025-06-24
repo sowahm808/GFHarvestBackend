@@ -29,6 +29,13 @@ node src/index.js
 - `GET  /api/quizzes/history/:childId` – Quiz history.
 - `POST /api/essays` – Create or update essay status.
 - `GET  /api/essays/:childId` – Get essay progress.
+- `POST /api/schoolwork` – Submit school work score.
+- `GET  /api/schoolwork/:childId` – Get school work records.
+- `POST /api/projects` – Submit or update project entry.
+- `GET  /api/projects/:childId` – Get project entries.
+- `POST /api/points/grant` – Grant points.
+- `GET  /api/points/:childId` – Get points for a child.
+- `GET  /api/groups/:groupId/points` – Get total points for a group.
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 The `authMiddleware` verifies the token and attaches the authenticated user's
