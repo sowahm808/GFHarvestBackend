@@ -3,9 +3,212 @@ info:
   title: Kids Faith Tracker API
   version: 1.0.0
 paths:
+  /api/users/register-parent:
+    post:
+      summary: Register a parent account
+      description: Accessible by unauthenticated users. Returns newly created parent profile.
+      responses:
+        '201':
+          description: Created
+  /api/users/add-child:
+    post:
+      summary: Add a child account
+      description: Parent role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Child created
+  /api/users/me:
+    get:
+      summary: Current user profile
+      description: Any authenticated user. Returns Firebase user record and claims.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: User profile
+  /api/checkins:
+    post:
+      summary: Submit a daily check-in
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Check-in stored
+  /api/checkins/{childId}:
+    get:
+      summary: Get child checkins
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of checkins
+  /api/mental-status:
+    post:
+      summary: Submit mental status
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Entry stored
+  /api/mental-status/{childId}
+    get:
+      summary: Get mental status logs
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of entries
+  /api/quizzes/today:
+    get:
+      summary: Get today's quiz
+      description: Authenticated users. Returns quiz questions for the day.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Quiz object
+  /api/quizzes/submit:
+    post:
+      summary: Submit quiz answers
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Submission stored
+  /api/quizzes/history/{childId}:
+    get:
+      summary: Quizh history for a child
+      description: Parent role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of submissions
+  /api/essays:
+    post:
+      summary: Update essay status
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Essay saved
+  /api/essays/{childId}:
+    get:
+      summary: Essay progress
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Essay object
+  /api/schoolwork:
+    post:
+      summary: Submit school work score
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Record stored
+  /api/schoolwork/{childId}:
+    get:
+      summary: School work records
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of records
+  /api/projects:
+    post:
+      summary: Submit or update project entry
+      description: Child role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Entry saved
+  /api/projects/{childId}:
+    get:
+      summary: Get project entries
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of entries
+  /api/points/grant:
+    post:
+      summary: Grant points to child
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Points granted
+  /api/points/{childId}
+    get:
+      summary: Get points for child
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Points object
   /api/groups/create:
     post:
       summary: Create a new group
+      description: Admin role required.
       security:
         - bearerAuth: []
       requestBody:
@@ -21,14 +224,15 @@ paths:
                   type: array
                   items:
                     type: string
-              required:
-                - name
+                required:
+                  - name
       responses:
         '201':
           description: Group created
   /api/groups/add-member:
     post:
       summary: Add a child to a group
+      description: Admin role required.
       security:
         - bearerAuth: []
       requestBody:
@@ -45,12 +249,13 @@ paths:
               required:
                 - groupId
                 - childId
-      responses:
+       responses:
         '200':
           description: Child added
   /api/groups/{groupId}:
     get:
       summary: Get group info
+      description: Admin role required.
       security:
         - bearerAuth: []
       parameters:
@@ -59,12 +264,13 @@ paths:
           required: true
           schema:
             type: string
-      responses:
+       responses:
         '200':
           description: Group object
   /api/groups:
     get:
       summary: List all groups
+      description: Admin role required.
       security:
         - bearerAuth: []
       responses:
