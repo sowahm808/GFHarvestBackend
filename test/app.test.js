@@ -15,4 +15,9 @@ describe('Auth middleware', () => {
       .send({ childId: 'c1', status: 'ok' });
     expect(res.statusCode).toEqual(401);
   });
+
+  it('should reject unauthorized user profile request', async () => {
+    const res = await request(app).get('/api/users/me');
+    expect(res.statusCode).toEqual(401);
+  });
 });

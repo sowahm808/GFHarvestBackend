@@ -12,9 +12,9 @@
 - [x] Middleware: `authMiddleware.js`, `roleGuard.js`
 
 ## 👤 User Management
-- [ ] POST `/api/users/register-parent` – Create parent account (Firebase Auth)
-- [ ] POST `/api/users/add-child` – Link child account to parent
-- [ ] GET `/api/users/me` – Get current user profile
+- [x] POST `/api/users/register-parent` – Create parent account (Firebase Auth)
+- [x] POST `/api/users/add-child` – Link child account to parent
+- [x] GET `/api/users/me` – Get current user profile
 
 ## 👨‍👩‍👧 Child & Mentor Linking
 - [ ] GET `/api/children/:childId` – Get child profile & linked data
