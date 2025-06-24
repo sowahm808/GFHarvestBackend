@@ -64,9 +64,9 @@
 
 ## 🧪 Testing
  - [x] Setup Jest or Mocha/Chai for unit tests
- - [ ] Write test cases for core routes and utilities
+ - [x] Write test cases for core routes and utilities
 
 ## 📄 Documentation
-- [ ] Create OpenAPI/Swagger spec for all endpoints
-- [ ] Include roles and expected responses for each
-- [ ] Add setup guide for local dev and Firebase config
+ - [x] Create OpenAPI/Swagger spec for all endpoints
+ - [x] Include roles and expected responses for each
+ - [x] Add setup guide for local dev and Firebase config
