@@ -6,6 +6,8 @@ require('./config/firebase'); // make sure this file exists
 const checkinsRoutes = require('./routes/checkins');
 const usersRoutes = require('./routes/users');
 const mentalRoutes = require('./routes/mentalStatus');
+const childrenRoutes = require('./routes/children');
+const mentorsRoutes = require('./routes/mentors');
 
 const app = express();
 app.use(cors());
@@ -13,6 +15,8 @@ app.use(express.json());
 app.use('/api/checkins', checkinsRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/mental-status', mentalRoutes);
+app.use('/api/children', childrenRoutes);
+app.use('/api/mentors', mentorsRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Kids Faith Tracker API' });

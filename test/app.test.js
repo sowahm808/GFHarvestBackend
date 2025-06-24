@@ -20,4 +20,21 @@ describe('Auth middleware', () => {
     const res = await request(app).get('/api/users/me');
     expect(res.statusCode).toEqual(401);
   });
+
+  it('should reject unauthorized child profile request', async () => {
+    const res = await request(app).get('/api/children/child1');
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized mentor assignment', async () => {
+    const res = await request(app)
+      .post('/api/mentors/assign')
+      .send({ childId: 'c1', mentorId: 'm1' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized mentor children request', async () => {
+    const res = await request(app).get('/api/mentors/m1/children');
+    expect(res.statusCode).toEqual(401);
+  });
 });
