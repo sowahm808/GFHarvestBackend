@@ -39,17 +39,17 @@
 - [x] GET `/api/essays/:childId` – Get essay progress
 
 ## 📚 School Work
-- [ ] POST `/api/schoolwork` – Submit score and help flag
-- [ ] GET `/api/schoolwork/:childId`
+- [x] POST `/api/schoolwork` – Submit score and help flag
+- [x] GET `/api/schoolwork/:childId`
 
 ## 🎓 Project Tracker
-- [ ] POST `/api/projects` – Submit/update project entry
-- [ ] GET `/api/projects/:childId`
+- [x] POST `/api/projects` – Submit/update project entry
+- [x] GET `/api/projects/:childId`
 
 ## 🧮 Points System
-- [ ] POST `/api/points/grant` – Assign points (activity, parent feedback)
-- [ ] GET `/api/points/:childId` – Get individual points
-- [ ] GET `/api/groups/:groupId/points` – Group total points
+- [x] POST `/api/points/grant` – Assign points (activity, parent feedback)
+- [x] GET `/api/points/:childId` – Get individual points
+- [x] GET `/api/groups/:groupId/points` – Group total points
 
 ## 👥 Groups
 - [ ] POST `/api/groups/create` – Create group (max 5 members)
