@@ -21,6 +21,9 @@ node src/index.js
 - `GET  /api/checkins/:childId` – Get check-ins for a specific child.
 - `POST /api/mental-status` – Submit a mental status entry.
 - `GET  /api/mental-status/:childId` – Get mental status logs for a child.
+- `GET  /api/children/:childId` – Get a child's profile and mentors.
+- `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
+- `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 The `authMiddleware` verifies the token and attaches the authenticated user's

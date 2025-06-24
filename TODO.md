@@ -17,9 +17,9 @@
 - [x] GET `/api/users/me` – Get current user profile
 
 ## 👨‍👩‍👧 Child & Mentor Linking
-- [ ] GET `/api/children/:childId` – Get child profile & linked data
-- [ ] POST `/api/mentors/assign` – Assign mentor to child
-- [ ] GET `/api/mentors/:mentorId/children` – List assigned children
+ - [x] GET `/api/children/:childId` – Get child profile & linked data
+ - [x] POST `/api/mentors/assign` – Assign mentor to child
+ - [x] GET `/api/mentors/:mentorId/children` – List assigned children
 
 ## 📆 Daily Check-Ins
 - [ ] POST `/api/checkins` – Submit check-in
