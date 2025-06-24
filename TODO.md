@@ -58,9 +58,9 @@
 - [x] GET `/api/groups` – List all groups (admin use)
 
 ## 🔔 Notifications (Future Phase)
-- [ ] Trigger email or in-app alert for bullying flags
-- [ ] Weekly summary to parents
-- [ ] Reminder jobs for quiz, essay, project deadlines
+- [x] Trigger email or in-app alert for bullying flags
+- [x] Weekly summary to parents
+- [x] Reminder jobs for quiz, essay, project deadlines
 
 ## 🧪 Testing
  - [x] Setup Jest or Mocha/Chai for unit tests

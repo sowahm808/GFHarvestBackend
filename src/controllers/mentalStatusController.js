@@ -1,16 +1,22 @@
 const admin = require('../config/firebase');
 const db = admin.firestore();
 
+const { sendBullyingAlert } = require('../services/notificationService');
+
 exports.submitEntry = async (req, res) => {
-  const { childId, status, notes } = req.body;
+  const { childId, status, notes, bullied } = req.body;
   try {
     const entry = {
       childId,
       status,
       notes,
+      bullied: !!bullied,
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     };
     await db.collection('mentalStatus').add(entry);
+    if (bullied) {
+      await sendBullyingAlert(childId, notes);
+    }
     res.status(201).json({ message: 'Entry recorded' });
   } catch (err) {
     console.error(err);
