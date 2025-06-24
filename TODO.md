@@ -2,9 +2,9 @@
 
 ## 🔧 Setup
 - [x] Initialize Node.js project with `express`, `firebase-admin`, `cors`, `dotenv`
-- [ ] Connect Firebase Admin SDK for Firestore and Auth
-- [ ] Configure environment variables (.env)
-- [ ] Set up Express app with routes structure
+- [x] Connect Firebase Admin SDK for Firestore and Auth
+- [x] Configure environment variables (.env)
+- [x] Set up Express app with routes structure
 
 ## 🔐 Authentication Middleware
 - [ ] Verify Firebase ID Token
