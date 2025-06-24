@@ -78,4 +78,23 @@ describe('Auth middleware', () => {
     const res = await request(app).get('/api/checkins/c1');
     expect(res.statusCode).toEqual(401);
   });
+
+  it('should reject unauthorized group creation', async () => {
+    const res = await request(app)
+      .post('/api/groups/create')
+      .send({ name: 'Test' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized add member', async () => {
+    const res = await request(app)
+      .post('/api/groups/add-member')
+      .send({ groupId: 'g1', childId: 'c1' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized group info request', async () => {
+    const res = await request(app).get('/api/groups/g1');
+    expect(res.statusCode).toEqual(401);
+  });
 });
