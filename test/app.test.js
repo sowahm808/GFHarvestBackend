@@ -37,4 +37,16 @@ describe('Auth middleware', () => {
     const res = await request(app).get('/api/mentors/m1/children');
     expect(res.statusCode).toEqual(401);
   });
+
+  it('should reject unauthorized check-in submission', async () => {
+    const res = await request(app)
+      .post('/api/checkins')
+      .send({ childId: 'c1', mood: 'happy' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized check-ins fetch', async () => {
+    const res = await request(app).get('/api/checkins/c1');
+    expect(res.statusCode).toEqual(401);
+  });
 });

@@ -22,12 +22,12 @@
  - [x] GET `/api/mentors/:mentorId/children` – List assigned children
 
 ## 📆 Daily Check-Ins
-- [ ] POST `/api/checkins` – Submit check-in
-- [ ] GET `/api/checkins/:childId` – Get child’s check-ins
+ - [x] POST `/api/checkins` – Submit check-in
+ - [x] GET `/api/checkins/:childId` – Get child’s check-ins
 
 ## 🧠 Mental Status Logs
-- [ ] POST `/api/mental-status` – Submit mental health entry
-- [ ] GET `/api/mental-status/:childId` – Retrieve mental logs
+ - [x] POST `/api/mental-status` – Submit mental health entry
+ - [x] GET `/api/mental-status/:childId` – Retrieve mental logs
 
 ## 📖 Bible Quizzes
 - [ ] GET `/api/quizzes/today` – Get today’s quiz
