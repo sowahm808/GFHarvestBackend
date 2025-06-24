@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 const { sendWeeklySummary } = require('../services/notificationService');
 
 async function buildSummary(parentId) {

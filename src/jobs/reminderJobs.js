@@ -1,4 +1,4 @@
-const admin = require('../config/firebase');
+const { admin } = require('../config/firebase');
 const { sendReminder } = require('../services/notificationService');
 
 async function sendQuizReminder(parentId) {

@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 
 exports.upsertProject = async (req, res) => {
   const { projectId, childId, title, progress } = req.body;

@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 
 exports.submitEntry = async (req, res) => {
   const { childId, score, needsHelp } = req.body;
