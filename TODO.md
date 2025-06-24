@@ -7,9 +7,9 @@
 - [x] Set up Express app with routes structure
 
 ## 🔐 Authentication Middleware
-- [ ] Verify Firebase ID Token
-- [ ] Role-based access check (parent, child, mentor)
-- [ ] Middleware: `authMiddleware.js`, `roleGuard.js`
+- [x] Verify Firebase ID Token
+- [x] Role-based access check (parent, child, mentor)
+- [x] Middleware: `authMiddleware.js`, `roleGuard.js`
 
 ## 👤 User Management
 - [ ] POST `/api/users/register-parent` – Create parent account (Firebase Auth)
