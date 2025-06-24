@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 
 async function createNotification(userId, type, message) {
   const entry = {

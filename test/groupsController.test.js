@@ -11,7 +11,8 @@ const firestoreMock = {
 };
 
 jest.mock('../src/config/firebase', () => ({
-  firestore: () => firestoreMock,
+  firestore: firestoreMock,
+  admin: {},
 }));
 
 const groupsController = require('../src/controllers/groupsController');

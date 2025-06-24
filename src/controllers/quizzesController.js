@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 
 exports.getTodayQuiz = async (req, res) => {
   const today = new Date().toISOString().split('T')[0];

@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { firestore } = require('../config/firebase');
+const db = firestore;
 
 const MAX_MEMBERS = 5;
 

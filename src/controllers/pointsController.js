@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { admin, firestore } = require('../config/firebase');
+const db = firestore;
 
 exports.grantPoints = async (req, res) => {
   const { childId, amount, activity, fromParent } = req.body;

@@ -1,5 +1,5 @@
-const admin = require('../config/firebase');
-const db = admin.firestore();
+const { firestore } = require('../config/firebase');
+const db = firestore;
 
 exports.assignMentor = async (req, res) => {
   const { mentorId, childId } = req.body;
