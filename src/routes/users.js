@@ -6,6 +6,7 @@ const usersController = require('../controllers/usersController');
 const router = express.Router();
 
 router.post('/register-parent', usersController.registerParent);
+router.post('/register-admin', usersController.registerAdmin);
 router.post('/add-child', auth, roleGuard(['parent']), usersController.addChild);
 router.get('/me', auth, usersController.getMe);
 

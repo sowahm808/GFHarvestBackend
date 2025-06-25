@@ -25,6 +25,7 @@ npm test
 ## Available Routes
 
 - `POST /api/users/register-parent` – Create a parent account.
+- `POST /api/users/register-admin` – Create an admin account.
 - `POST /api/users/add-child` – Add a child account (parent only).
 - `GET  /api/users/me` – Retrieve the current user's profile.
 - `POST /api/checkins` – Submit a check-in entry.
@@ -54,7 +55,7 @@ npm test
 Authentication is performed via Firebase ID tokens passed in the `Authorization` header.
 The `authMiddleware` verifies the token and attaches the authenticated user's
 claims to `req.user`. The optional `roleGuard` middleware restricts access to
-routes based on custom `role` claims (`parent`, `child`, or `mentor`).
+routes based on custom `role` claims (`parent`, `child`, `mentor`, or `admin`).
 
 ## Testing
 

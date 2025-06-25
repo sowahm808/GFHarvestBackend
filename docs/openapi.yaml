@@ -10,6 +10,13 @@ paths:
       responses:
         '201':
           description: Created
+  /api/users/register-admin:
+    post:
+      summary: Register an admin account
+      description: Accessible by unauthenticated users. Returns newly created admin profile.
+      responses:
+        '201':
+          description: Created
   /api/users/add-child:
     post:
       summary: Add a child account

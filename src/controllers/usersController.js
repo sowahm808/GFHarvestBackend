@@ -12,6 +12,18 @@ exports.registerParent = async (req, res) => {
   }
 };
 
+exports.registerAdmin = async (req, res) => {
+  const { email, password, name } = req.body;
+  try {
+    const userRecord = await admin.auth().createUser({ email, password, displayName: name });
+    await admin.auth().setCustomUserClaims(userRecord.uid, { role: 'admin' });
+    res.status(201).json({ uid: userRecord.uid, email: userRecord.email });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
+
 exports.addChild = async (req, res) => {
   const { email, password, name } = req.body;
   const parentId = req.user.uid;
