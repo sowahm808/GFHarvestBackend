@@ -116,6 +116,35 @@ paths:
       responses:
         '200':
           description: Array of submissions
+  /api/bible-questions:
+    get:
+      summary: List Bible quiz questions
+      description: Authenticated users. Optional quarter filter.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: quarter
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of questions
+  /api/bible-questions/{id}:
+    get:
+      summary: Get a Bible quiz question
+      description: Authenticated users.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Question object
   /api/essays:
     post:
       summary: Update essay status
