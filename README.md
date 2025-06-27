@@ -38,6 +38,8 @@ npm test
 - `GET  /api/quizzes/today` – Get today’s quiz.
 - `POST /api/quizzes/submit` – Submit quiz answers.
 - `GET  /api/quizzes/history/:childId` – Quiz history.
+- `GET  /api/bible-questions` – List Bible quiz questions (filter by quarter).
+- `GET  /api/bible-questions/:id` – Get a specific Bible question.
 - `POST /api/essays` – Create or update essay status.
 - `GET  /api/essays/:childId` – Get essay progress.
 - `POST /api/schoolwork` – Submit school work score.
