@@ -1,17 +1,37 @@
 [
   {
-    "id": "2ffa77d0-561c-4bb7-8aa7-b172d3f39524",
+    "id": "c4d670f4-55b5-4a3d-89af-ecf63df0c1ac",
     "reference": "1- Psalm 95: 6-11 \u201cWorship and bow down\u201d",
-    "question": "O Lord to whom ________ belongeth Let us come before his presence with _________, and make a joyful noise unto him with psalms. For he is our ________; and we are the people of his pasture",
+    "question": "O Lord to whom ________ belongeth",
     "options": [
       "Righteousness",
       "Mercy",
       "Peace",
-      "Vengeance",
+      "Vengeance"
+    ],
+    "answer": "Vengeance",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e3733a19-c0f8-48c2-9db7-799db4ffaa55",
+    "reference": "1- Psalm 95: 6-11 \u201cWorship and bow down\u201d",
+    "question": "Let us come before his presence with _________, and make a joyful noise unto him with psalms.",
+    "options": [
       "Sacrifice",
       "Thanksgiving",
       "Praise",
-      "Offerings",
+      "Offerings"
+    ],
+    "answer": "Thanksgiving",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "40661b1e-b43a-4020-8026-0c180afe11c7",
+    "reference": "2- Psalm 100: 4-5 \u201cEnter His gates with thanksgiving\u201d",
+    "question": "For he is our ________; and we are the people of his pasture",
+    "options": [
       "Father",
       "Redeemer",
       "King",
@@ -22,18 +42,38 @@
     "month": ""
   },
   {
-    "id": "8e7eb3dd-a04f-4ac0-bb6f-b097e8300d46",
+    "id": "dcfadbc5-f52a-4526-b525-190e60f7e059",
     "reference": "2- Psalm 100: 4-5 \u201cEnter His gates with thanksgiving\u201d",
-    "question": "Serve the Lord with ______: come before his presence with singing. Enter into his gates with thanksgiving, and into his court with ____? His mercy is everlasting; and his truth endureth to ___ generations.",
+    "question": "Serve the Lord with ______: come before his presence with singing.",
     "options": [
       "Smile",
       "Your heart",
       "Gladness",
-      "All the above",
+      "All the above"
+    ],
+    "answer": "Gladness",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "5d673542-71ba-4ae5-8843-66e88d52657f",
+    "reference": "2- Psalm 100: 4-5 \u201cEnter His gates with thanksgiving\u201d",
+    "question": "Enter into his gates with thanksgiving, and into his court with ____?",
+    "options": [
       "Singing",
       "Gladness",
       "Boldness",
-      "Praise",
+      "Praise"
+    ],
+    "answer": "Praise",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f87df9b3-6f0f-4d59-989a-a209006c384e",
+    "reference": "3- Psalm 103:2 \u201cBless the Lord, O my soul\u201d",
+    "question": "His mercy is everlasting; and his truth endureth to ___ generations.",
+    "options": [
       "Some",
       "Any",
       "All",
@@ -44,14 +84,24 @@
     "month": ""
   },
   {
-    "id": "f949d3b9-5243-4a09-81de-b6f405cb2acc",
+    "id": "87db8da4-0980-4c82-83c2-f77a1d477f86",
     "reference": "3- Psalm 103:2 \u201cBless the Lord, O my soul\u201d",
-    "question": "Bless the Lord, O my soul, and forget not all his ___? The Lord is ___",
+    "question": "Bless the Lord, O my soul, and forget not all his ___?",
     "options": [
       "Favors",
       "Forgiveness",
       "Punishment",
-      "Benefits",
+      "Benefits"
+    ],
+    "answer": "Benefits",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "3dbc63bd-5952-4859-8769-7a3db7033697",
+    "reference": "4- Psalm 103:17 \u201cThe mercy of the Lord is from everlasting to everlasting\u201d",
+    "question": "The Lord is ___",
+    "options": [
       "Merciful",
       "Slow to anger",
       "Gracious",
@@ -62,18 +112,38 @@
     "month": ""
   },
   {
-    "id": "84755475-ab5e-49e6-8521-9984f99adfe1",
+    "id": "9e6f332e-7e05-4926-9306-21baf47d07f7",
     "reference": "4- Psalm 103:17 \u201cThe mercy of the Lord is from everlasting to everlasting\u201d",
-    "question": "Who satisfieth thy mouth with ___ things To whom does the Lord keep his covenant? He made known his ____ unto Moses",
+    "question": "Who satisfieth thy mouth with ___ things",
     "options": [
       "Juicy",
       "Sweet",
       "Bitter",
-      "Good",
+      "Good"
+    ],
+    "answer": "Good",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "5997e408-9c8a-4d88-9886-50a3cce626da",
+    "reference": "4- Psalm 103:17 \u201cThe mercy of the Lord is from everlasting to everlasting\u201d",
+    "question": "To whom does the Lord keep his covenant?",
+    "options": [
       "Those who are good",
       "Those who are kind",
       "Those who fear him",
-      "Those who call on his name",
+      "Those who call on his name"
+    ],
+    "answer": "Those who fear him",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "8e420d42-6fcf-46c4-bde2-01a30e542b44",
+    "reference": "5- Proverbs 11:30 \u201cThe fruit of righteousness is a tree of life\u201d",
+    "question": "He made known his ____ unto Moses",
+    "options": [
       "Thoughts",
       "Future",
       "Ways",
@@ -84,18 +154,38 @@
     "month": ""
   },
   {
-    "id": "ac8c8272-3f35-4721-a4be-90f20e367562",
+    "id": "2b596f1f-4ef6-4354-9a14-7e48cc5483a7",
     "reference": "5- Proverbs 11:30 \u201cThe fruit of righteousness is a tree of life\u201d",
-    "question": "The blessing of the Lord makes one rich, and He adds no ____ with it. A talebearer reveals _____ ; but he who is a faithful spirit conceal the matter. The ___ soul shall be made fat: and he that watereth shall be watered also himself",
+    "question": "The blessing of the Lord makes one rich, and He adds no ____ with it.",
     "options": [
       "Shame",
       "Pride",
       "Regret",
-      "Sorrow",
+      "Sorrow"
+    ],
+    "answer": "Sorrow",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "552532e5-ec38-4c83-8b75-f1e2f8acab20",
+    "reference": "5- Proverbs 11:30 \u201cThe fruit of righteousness is a tree of life\u201d",
+    "question": "A talebearer reveals _____ ; but he who is a faithful spirit conceal the matter.",
+    "options": [
       "Secrets",
       "Gossip",
       "Fault",
-      "Sin",
+      "Sin"
+    ],
+    "answer": "Secrets",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "ba589ebe-cc82-4354-ba0d-ff9c0a7b3aa0",
+    "reference": "6- Proverbs 12:14 \u201cA man will be satisfied with good by the fruit of his mouth\u201d",
+    "question": "The ___ soul shall be made fat: and he that watereth shall be watered also himself",
+    "options": [
       "Stingy",
       "Liberal",
       "Conservative",
@@ -106,14 +196,24 @@
     "month": ""
   },
   {
-    "id": "651efafb-5977-496c-a248-3c9d0a213b50",
+    "id": "a710592c-e6d4-4d5c-b5f8-c29c31d55797",
     "reference": "6- Proverbs 12:14 \u201cA man will be satisfied with good by the fruit of his mouth\u201d",
-    "question": "The way of ____ is right in his own eyes: but he that hearkeneth unto counsel is wise The ___ desireth the net of evil men: but the root of the righteous yieldeth fruit.",
+    "question": "The way of ____ is right in his own eyes: but he that hearkeneth unto counsel is wise",
     "options": [
       "A sinner",
       "The proud",
       "A simple person",
-      "A fool",
+      "A fool"
+    ],
+    "answer": "A fool",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2a17a1af-2b52-4085-b199-21aee5b244ca",
+    "reference": "7- Proverbs 3:9 \u201cHonor the Lord \u2026 with the first fruits of all your increase\u201d",
+    "question": "The ___ desireth the net of evil men: but the root of the righteous yieldeth fruit.",
+    "options": [
       "Wise",
       "Fool",
       "Wicked",
@@ -124,18 +224,38 @@
     "month": ""
   },
   {
-    "id": "a9830ca8-81a1-4302-a24f-3853c20866b3",
+    "id": "773ed4c2-4eba-491a-9ce5-356327bd8945",
     "reference": "7- Proverbs 3:9 \u201cHonor the Lord \u2026 with the first fruits of all your increase\u201d",
-    "question": "Trust in the Lord with all thine heart; and lean not unto thine own _____. By his ____ the depths are broken up, and the clouds drop down the dew Keep thy heart with all ______; for out of it are the issues of life.",
+    "question": "Trust in the Lord with all thine heart; and lean not unto thine own _____.",
     "options": [
       "Knowledge",
       "Education",
       "Intelligence",
-      "Understanding",
+      "Understanding"
+    ],
+    "answer": "Understanding",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "1124871a-0561-4f07-ac24-25a78764fda8",
+    "reference": "7- Proverbs 3:9 \u201cHonor the Lord \u2026 with the first fruits of all your increase\u201d",
+    "question": "By his ____ the depths are broken up, and the clouds drop down the dew",
+    "options": [
       "Kindness",
       "Meekness",
       "Knowledge",
-      "Charity",
+      "Charity"
+    ],
+    "answer": "Knowledge",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a810b0ef-2c0c-4329-ab63-a798dd33c08d",
+    "reference": "8- Proverbs 31:31 \u201cGive her of the fruit of her hands\u201d",
+    "question": "Keep thy heart with all ______; for out of it are the issues of life.",
+    "options": [
       "Your mind",
       "Diligence",
       "Your soul",
@@ -146,47 +266,94 @@
     "month": ""
   },
   {
-    "id": "855af249-6712-48ff-a8f7-eb52f65f5cf7",
+    "id": "af962859-d830-41a3-84a8-5a002b34ebaf",
     "reference": "8- Proverbs 31:31 \u201cGive her of the fruit of her hands\u201d",
-    "question": "Who can find ____ woman? Favor is deceitful, and beauty is vain: but a woman that _____ the Lord, shall be praised. What little things are exceeding wise? What things go well and are comely in going?",
+    "question": "Who can find ____ woman?",
     "options": [
       "A nice",
       "An attractive",
       "A virtuous",
-      "A young",
-      "a & b",
+      "A young"
+    ],
+    "answer": "A virtuous",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "44742611-1f75-4f4f-815a-25d0facaddf7",
+    "reference": "8- Proverbs 31:31 \u201cGive her of the fruit of her hands\u201d",
+    "question": "Favor is deceitful, and beauty is vain: but a woman that _____ the Lord, shall be praised.",
+    "options": [
       "Loves",
       "Serves",
       "Fears",
-      "All the above",
+      "All the above"
+    ],
+    "answer": "Fears",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "fbeaf7c6-fd77-4aaa-bdb7-7addff54c58d",
+    "reference": "8- Proverbs 31:31 \u201cGive her of the fruit of her hands\u201d",
+    "question": "What little things are exceeding wise?",
+    "options": [
       "Ants",
       "Locusts",
       "Spiders",
-      "All the above",
+      "All the above"
+    ],
+    "answer": "All the above",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e1f6fed7-44fc-4aa4-ae25-1c2452b5239c",
+    "reference": "8- Proverbs 31:31 \u201cGive her of the fruit of her hands\u201d",
+    "question": "What things go well and are comely in going?",
+    "options": [
       "An he-goat",
       "A king, against whom there is no rising up",
       "A lion",
-      "a & c",
-      "All of the above"
+      "a & c"
     ],
     "answer": "a & c",
     "quarter": "Q4",
     "month": ""
   },
   {
-    "id": "924164f7-b78f-4df1-8859-b850ce8cee22",
+    "id": "8acec3c1-a4c0-4fcb-9cf1-bfe92e5b9612",
     "reference": "9- 2 Corinthians 9:6 \u201cHe who sows bountifully will also reap bountifully\u201d",
-    "question": "What attitude in giving does God love? What is the purpose of giving? How did Paul describe the gift that God has given to us?",
+    "question": "What attitude in giving does God love?",
     "options": [
       "Regularly",
       "Willingly",
       "Abundantly",
-      "Cheerfully",
+      "Cheerfully"
+    ],
+    "answer": "Cheerfully",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "17235b02-3422-409a-8a4e-06c60b65bc8e",
+    "reference": "9- 2 Corinthians 9:6 \u201cHe who sows bountifully will also reap bountifully\u201d",
+    "question": "What is the purpose of giving?",
+    "options": [
       "To be blessed in return",
       "Supply needs",
       "Thanksgiving unto God",
-      "b & c",
-      "All of the above",
+      "b & c"
+    ],
+    "answer": "b & c",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b8e9528d-ff03-4159-a310-57119c5196e2",
+    "reference": "10- Ecclesiastes 5:4 \u201cKeep Your Vows to God\u201d",
+    "question": "How did Paul describe the gift that God has given to us?",
+    "options": [
       "Great",
       "Exceeding",
       "Wonderful",
@@ -197,18 +364,38 @@
     "month": ""
   },
   {
-    "id": "443187dd-3034-4f65-b750-da1afaeb43f0",
+    "id": "a9815d2c-3302-401c-b348-928171f7e109",
     "reference": "10- Ecclesiastes 5:4 \u201cKeep Your Vows to God\u201d",
-    "question": "Why are two better than one? How is a fool known? What should you NOT defer to pay?",
+    "question": "Why are two better than one?",
     "options": [
       "If they plan, two heads are better than one",
       "If they travel, this reduces loneliness",
       "If they fall, the one will lift up his fellow",
-      "If they travel, this provides protection",
+      "If they travel, this provides protection"
+    ],
+    "answer": "If they fall, the one will lift up his fellow",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "56f086a6-f4bd-4b4e-9e6d-d0995a6da5cc",
+    "reference": "10- Ecclesiastes 5:4 \u201cKeep Your Vows to God\u201d",
+    "question": "How is a fool known?",
+    "options": [
       "By multitude of words",
       "By his friends",
       "By saying there is no God",
-      "By his unwillingness to listen",
+      "By his unwillingness to listen"
+    ],
+    "answer": "By multitude of words",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "1e963039-15bd-403b-acc7-af8e95ede899",
+    "reference": "11- Ecclesiastes 7:12 \u201cWisdom is a defense\u201d",
+    "question": "What should you NOT defer to pay?",
+    "options": [
       "Fasting",
       "Tithing",
       "Bills",
@@ -219,18 +406,38 @@
     "month": ""
   },
   {
-    "id": "8456786d-ef36-47dd-8672-b3b266d6ee66",
+    "id": "e6cc924e-5a4b-4de5-8821-d2bdf09d8166",
     "reference": "11- Ecclesiastes 7:12 \u201cWisdom is a defense\u201d",
-    "question": "What is better than fine perfume? What is more bitter than death? What is better than desire?",
+    "question": "What is better than fine perfume?",
     "options": [
       "Fame",
       "Knowledge",
       "Wealth",
-      "A good name",
+      "A good name"
+    ],
+    "answer": "A good name",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d7f2f44f-a8c7-4c63-841f-0c51eebe713e",
+    "reference": "11- Ecclesiastes 7:12 \u201cWisdom is a defense\u201d",
+    "question": "What is more bitter than death?",
+    "options": [
       "Strong drink",
       "Bad advice",
       "The woman, whose heart is snares and nets",
-      "Wine",
+      "Wine"
+    ],
+    "answer": "The woman, whose heart is snares and nets",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f36580c6-e2b5-47dc-b01e-bf1c8bd20f45",
+    "reference": "12- Isaiah 53:5 \u201cBy His stripes we are healed\u201d",
+    "question": "What is better than desire?",
+    "options": [
       "Pleasure",
       "Promises",
       "The sight of the eyes",
@@ -241,18 +448,38 @@
     "month": ""
   },
   {
-    "id": "a738c766-fc81-4b83-890b-c3bc73ff5f5f",
+    "id": "a8216e56-ce01-4dd1-bdf9-8b9a8dd32d4b",
     "reference": "12- Isaiah 53:5 \u201cBy His stripes we are healed\u201d",
-    "question": "For what was he wounded? To what are we likened? How do our thoughts compare to God's thoughts?",
+    "question": "For what was he wounded?",
     "options": [
       "Our healing",
       "Our griefs",
       "Our blessings",
-      "Our transgressions",
+      "Our transgressions"
+    ],
+    "answer": "Our transgressions",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "31f46e21-819d-4ab6-b7b6-98c5cd7dc0cc",
+    "reference": "12- Isaiah 53:5 \u201cBy His stripes we are healed\u201d",
+    "question": "To what are we likened?",
+    "options": [
       "Clouds without water",
       "Wandering stars",
       "Sheep that have gone astray",
-      "A dog returning to its vomit",
+      "A dog returning to its vomit"
+    ],
+    "answer": "Sheep that have gone astray",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a4ff8da2-260e-4317-870a-ac44ff0c57f8",
+    "reference": "13- Jeremiah 1:5 \u201cBefore you were born I sanctified you\u201d",
+    "question": "How do our thoughts compare to God's thoughts?",
+    "options": [
       "As a grain of sand on a seashore",
       "As a minnow in the ocean",
       "As a drop in a bucket",
@@ -263,18 +490,38 @@
     "month": ""
   },
   {
-    "id": "96bc3daa-1370-4135-90ea-f5e5ae8ab1c5",
+    "id": "8234f9ff-a62a-4933-9ecd-246ee2b192db",
     "reference": "13- Jeremiah 1:5 \u201cBefore you were born I sanctified you\u201d",
-    "question": "When was Jeremiah ordained to be a prophet? Be not _____ of their faces: for I am with thee to deliver thee saith the Lord What did the Lord say to the men of Judah?",
+    "question": "When was Jeremiah ordained to be a prophet?",
     "options": [
       "Age 12",
       "Age 25",
       "When he was born",
-      "Before he came forth out of the womb",
+      "Before he came forth out of the womb"
+    ],
+    "answer": "Before he came forth out of the womb",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "fecd162b-0d2b-4b6a-99d1-2c3dba13aa2c",
+    "reference": "13- Jeremiah 1:5 \u201cBefore you were born I sanctified you\u201d",
+    "question": "Be not _____ of their faces: for I am with thee to deliver thee saith the Lord",
+    "options": [
       "Afraid",
       "Courageous",
       "Worry",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Afraid",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4763d566-bec3-4017-934a-cbf75c935088",
+    "reference": "14- Jeremiah 10:23 \u201cIt is not in man who walks to direct his own steps\u201d",
+    "question": "What did the Lord say to the men of Judah?",
+    "options": [
       "Circumcise yourself to the Lord",
       "Break up your fallow ground",
       "Sow not among thorns",
@@ -285,18 +532,38 @@
     "month": ""
   },
   {
-    "id": "00c24f7d-2d31-4284-b914-657ba7a5faa5",
+    "id": "2a8e948e-e668-4c23-a2df-5a9512a455c1",
     "reference": "14- Jeremiah 10:23 \u201cIt is not in man who walks to direct his own steps\u201d",
-    "question": "What is man not able to direct? Who will not save Judah in the time of their trouble? What questions troubled Jeremiah?",
+    "question": "What is man not able to direct?",
     "options": [
       "His thoughts",
       "Animals",
       "His steps",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "His steps",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d58d4bf3-3a32-432e-97dc-62fcead8d2f0",
+    "reference": "14- Jeremiah 10:23 \u201cIt is not in man who walks to direct his own steps\u201d",
+    "question": "Who will not save Judah in the time of their trouble?",
+    "options": [
       "The gods to whom they offer incense",
       "The Egyptians",
       "The Babylonians",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "The gods to whom they offer incense",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a4e75fca-af74-4090-9f2a-a0818b776483",
+    "reference": "15- Ezekiel 34:31 \u201cYou are My flock \u2026 I am your God\u201d",
+    "question": "What questions troubled Jeremiah?",
+    "options": [
       "Why does the way of the wicked prosper?",
       "Why did the Lord call him?",
       "Why do all the faithless live at ease?",
@@ -307,14 +574,24 @@
     "month": ""
   },
   {
-    "id": "38510d0e-1810-4720-a89b-44c1652a0994",
+    "id": "dd25f7cf-e4f7-4377-8a34-e175c9f2ad08",
     "reference": "15- Ezekiel 34:31 \u201cYou are My flock \u2026 I am your God\u201d",
-    "question": "With their mouths they express devotion, but with their hearts are _____ for unjust gain What charges did the Lord make against the shepherds of Israel?",
+    "question": "With their mouths they express devotion, but with their hearts are _____ for unjust gain",
     "options": [
       "Greedy",
       "Wishing",
       "Singing",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Greedy",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "696bf43e-7f1c-455d-9bdc-81d9d8d12fb3",
+    "reference": "16- Zechariah 9:11-12 \u201cI will restore double to you\u201d",
+    "question": "What charges did the Lord make against the shepherds of Israel?",
+    "options": [
       "They did not seek that which was lost",
       "with cruelty they ruled over the flock",
       "The shepherds fed themselves but not the flock",
@@ -325,18 +602,38 @@
     "month": ""
   },
   {
-    "id": "59dd08c0-f45e-4bf2-a95d-124a22c4e738",
+    "id": "2ad5ea7c-9004-437d-9411-33b27de1e6aa",
     "reference": "16- Zechariah 9:11-12 \u201cI will restore double to you\u201d",
-    "question": "Foreigners will occupy ____, and I will cut off the pride of the Philistines. I will take away the chariots from ______ and the war-horses from Jerusalem, and the battle bow will be broken. The Lord their God will _____ them on that day as the flock of his people.",
+    "question": "Foreigners will occupy ____, and I will cut off the pride of the Philistines.",
     "options": [
       "Jerusalem",
       "Cairo",
       "Ashdod",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Ashdod",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "ac62d8cf-0724-4ced-9722-3289d33eb181",
+    "reference": "16- Zechariah 9:11-12 \u201cI will restore double to you\u201d",
+    "question": "I will take away the chariots from ______ and the war-horses from Jerusalem, and the battle bow will be broken.",
+    "options": [
       "Ishbosheth",
       "Isaac",
       "Ephraim",
-      "Paul",
+      "Paul"
+    ],
+    "answer": "Ephraim",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e158fcb6-aff0-45f3-9f03-728ba23edd5d",
+    "reference": "17- Zechariah 14:20-21 \u201cHoliness to the LORD\u201d",
+    "question": "The Lord their God will _____ them on that day as the flock of his people.",
+    "options": [
       "Save",
       "Punish",
       "Forget",
@@ -347,14 +644,24 @@
     "month": ""
   },
   {
-    "id": "96e25938-f1fe-4e63-a069-f6f6a80a051b",
+    "id": "ad689d8f-d793-465a-aaa6-6e074db8e2b6",
     "reference": "17- Zechariah 14:20-21 \u201cHoliness to the LORD\u201d",
-    "question": "On that day his feet will stand on the ________, east of Jerusalem, and the Mount of Olives will be split in two from east to west \u2026.... _____ too will fight at Jerusalem",
+    "question": "On that day his feet will stand on the ________, east of Jerusalem, and the Mount of Olives will be split in two from east to west \u2026....",
     "options": [
       "Mount of Olives",
       "Mount Sinai",
       "Day of Salvation",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Mount of Olives",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4ff9fb6e-04b9-4d84-8a54-a81b256928b7",
+    "reference": "18- Malachi 3:10-11 Tithes and Offerings",
+    "question": "_____ too will fight at Jerusalem",
+    "options": [
       "Ephraim",
       "Jesus",
       "Satan",
@@ -365,18 +672,38 @@
     "month": ""
   },
   {
-    "id": "d5188d68-05dc-4398-b53f-f8c77b3b1e6b",
+    "id": "136b3082-509c-4759-a581-3749780dd3a6",
     "reference": "18- Malachi 3:10-11 Tithes and Offerings",
-    "question": "I the Lord do not _____. What happened if a man rob God? Test me in this, 'says the Lord almighty, ' and see if I will not throw open the ____ of heaven and pour out so much blessing......",
+    "question": "I the Lord do not _____.",
     "options": [
       "Change",
       "Cry",
       "Sin",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Change",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "16fdb066-e36f-49ac-b34e-654177e25ed1",
+    "reference": "18- Malachi 3:10-11 Tithes and Offerings",
+    "question": "What happened if a man rob God?",
+    "options": [
       "Nothing",
       "He is forgiven",
       "He is bless as always",
-      "He is under a curse",
+      "He is under a curse"
+    ],
+    "answer": "He is under a curse",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "955d10a5-da9a-4593-be6e-5c569634f788",
+    "reference": "19- Mark 1:5-9 John Baptized with Water",
+    "question": "Test me in this, 'says the Lord almighty, ' and see if I will not throw open the ____ of heaven and pour out so much blessing......",
+    "options": [
       "Door",
       "House",
       "Floodgates",
@@ -387,18 +714,38 @@
     "month": ""
   },
   {
-    "id": "79a8ac3d-c7bd-4e5f-b07b-ce13fa0147b7",
+    "id": "9e7dd2cb-92d4-4926-a633-e56594617e7b",
     "reference": "19- Mark 1:5-9 John Baptized with Water",
-    "question": "According to John the Baptist what would Jesus baptize believers with? What was John the Baptist message? Where were Judean baptized?",
+    "question": "According to John the Baptist what would Jesus baptize believers with?",
     "options": [
       "Water",
       "The Holy spirit",
       "Blessings",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "The Holy spirit",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "9f3781d5-6df3-41cf-b200-271cf51d5284",
+    "reference": "19- Mark 1:5-9 John Baptized with Water",
+    "question": "What was John the Baptist message?",
+    "options": [
       "After me will come one more powerful than I",
       "Righteousness",
       "Holiness",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "After me will come one more powerful than I",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e92a516a-ec3d-412c-9eba-c659520c284e",
+    "reference": "20- Mark 1:8-10 \u201c[Christ] will baptize you with the Holy Spirit\u201d",
+    "question": "Where were Judean baptized?",
+    "options": [
       "On the Mount of Olives",
       "In Jerusalem",
       "In Egypt",
@@ -409,14 +756,24 @@
     "month": ""
   },
   {
-    "id": "14bfa04b-75ce-4a30-b275-f6259ae3f8b5",
+    "id": "6f3491d6-0709-4502-b3ed-9b59b5f0d267",
     "reference": "20- Mark 1:8-10 \u201c[Christ] will baptize you with the Holy Spirit\u201d",
-    "question": "When Jesus was coming up out of the water, what did John the Baptist saw descending on Jesus? What was Simon and his brother Andrew profession?",
+    "question": "When Jesus was coming up out of the water, what did John the Baptist saw descending on Jesus?",
     "options": [
       "Fire",
       "Smoke",
       "The Spirit",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "The Spirit",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "364b4c00-5df0-456e-b9b3-1e13dbc664bc",
+    "reference": "21- John 14:17 \u201cThe Spirit of Truth \u2026 He dwells with you\u201d",
+    "question": "What was Simon and his brother Andrew profession?",
+    "options": [
       "Carpenters",
       "Soccer players",
       "Musicians",
@@ -427,18 +784,38 @@
     "month": ""
   },
   {
-    "id": "2d421e9e-d578-4a08-a5e9-f1fe3fe99e05",
+    "id": "38dafa7e-8a89-4748-b56e-f003e727f9cc",
     "reference": "21- John 14:17 \u201cThe Spirit of Truth \u2026 He dwells with you\u201d",
-    "question": "And If I go and prepare a place for you, I will ____ back and take you to be with me that you also may be where I am. What may we ask in Jesus name? Why can't the world accept the Spirit of truth?",
+    "question": "And If I go and prepare a place for you, I will ____ back and take you to be with me that you also may be where I am.",
     "options": [
       "Come",
       "Send rain",
       "Bless you",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Come",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "26499eac-9d54-4299-9fbb-6a2a7ac9f6e4",
+    "reference": "21- John 14:17 \u201cThe Spirit of Truth \u2026 He dwells with you\u201d",
+    "question": "What may we ask in Jesus name?",
+    "options": [
       "Cars",
       "House",
       "Children",
-      "Anything",
+      "Anything"
+    ],
+    "answer": "Anything",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "14c4d838-5e56-40cd-81e7-a3f33cbeeea0",
+    "reference": "22- John 14:19-20 \u201cYou will know that I am in My Father, and you in Me, and I in you\u201d",
+    "question": "Why can't the world accept the Spirit of truth?",
+    "options": [
       "Because it neither sees him nor knows him",
       "Because it is foolishness",
       "Because it doesn't know Jesus",
@@ -449,18 +826,38 @@
     "month": ""
   },
   {
-    "id": "768d6042-7f5d-4998-901f-315d21c524c8",
+    "id": "a46727b4-4573-4e12-a6c4-bf1315efe944",
     "reference": "22- John 14:19-20 \u201cYou will know that I am in My Father, and you in Me, and I in you\u201d",
-    "question": "Why would we live? How can we be sure we love God? Who will teach us all things?",
+    "question": "Why would we live?",
     "options": [
       "Because Jesus live",
       "Because we are yet to die",
       "Because we trust God",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Because Jesus live",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "efce5dcc-5d96-435f-844c-033959c0c460",
+    "reference": "22- John 14:19-20 \u201cYou will know that I am in My Father, and you in Me, and I in you\u201d",
+    "question": "How can we be sure we love God?",
+    "options": [
       "If we go to church",
       "If we help the poor",
       "If we pray",
-      "If obey God commands",
+      "If obey God commands"
+    ],
+    "answer": "If obey God commands",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "1559e531-9039-4797-aaa2-c009ca9b5946",
+    "reference": "23- Isaiah 54:2 \u201cEnlarge the place of your tent\u201d",
+    "question": "Who will teach us all things?",
+    "options": [
       "Our teachers",
       "The pastors",
       "Our parents",
@@ -471,14 +868,24 @@
     "month": ""
   },
   {
-    "id": "327747cf-b8ba-4d95-b809-3e8308933bd8",
+    "id": "da4e65fe-0346-43da-987a-8acf20fcfa0c",
     "reference": "23- Isaiah 54:2 \u201cEnlarge the place of your tent\u201d",
-    "question": "Do not be _____; you will not suffer shame For he was pierces for our ______, he was crushed for our iniquities",
+    "question": "Do not be _____; you will not suffer shame",
     "options": [
       "Afraid",
       "Cry",
       "Sing",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Afraid",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a1074d42-b462-4fc7-935d-ea3182b34f66",
+    "reference": "24- Matthew 21:21 \u201cIf you have faith and do not doubt\u201d",
+    "question": "For he was pierces for our ______, he was crushed for our iniquities",
+    "options": [
       "Blessings",
       "Future",
       "Transgressions",
@@ -489,14 +896,24 @@
     "month": ""
   },
   {
-    "id": "3513eb89-883a-4ebe-8d5c-4c9bca6fb740",
+    "id": "f0e121b8-6538-4a9a-90d2-1d3a2d4ee3c0",
     "reference": "24- Matthew 21:21 \u201cIf you have faith and do not doubt\u201d",
-    "question": "My house will be called a _____, but you are making it a den or robbers Why were the disciples amazed?",
+    "question": "My house will be called a _____, but you are making it a den or robbers",
     "options": [
       "House of worship",
       "House of orphans",
       "House of prayer",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "House of prayer",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "aef0a56b-d9fd-4bf5-9940-0f61553ea1d6",
+    "reference": "25- Matthew 21:22 \u201cWhatever things you ask \u2026 believing, you will receive\u201d",
+    "question": "Why were the disciples amazed?",
+    "options": [
       "Because the fig tree wither so quickly",
       "Because Jesus spoke with authority",
       "Because they were sleeping",
@@ -507,18 +924,38 @@
     "month": ""
   },
   {
-    "id": "d68c01fb-ce47-494b-ab16-99391bc70862",
+    "id": "a0fe8389-be54-4d46-92d5-36c78b026273",
     "reference": "25- Matthew 21:22 \u201cWhatever things you ask \u2026 believing, you will receive\u201d",
-    "question": "Who was behind the request for James and John to sit on either side of Jesus in glory? What was the motivation of the works of the Pharisees? How often was Peter told to forgive a person?",
+    "question": "Who was behind the request for James and John to sit on either side of Jesus in glory?",
     "options": [
       "Their father",
       "Their sister",
       "Their mother",
-      "Peter",
+      "Peter"
+    ],
+    "answer": "Their mother",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "6d1bc3fa-4fb4-421d-a2cc-1bbf04423e54",
+    "reference": "25- Matthew 21:22 \u201cWhatever things you ask \u2026 believing, you will receive\u201d",
+    "question": "What was the motivation of the works of the Pharisees?",
+    "options": [
       "To have rewards in heaven",
       "To please God",
       "To outdo the Sadducees",
-      "To be seen of men",
+      "To be seen of men"
+    ],
+    "answer": "To be seen of men",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "1b24e1af-4383-4e3b-a0bc-575f66dbddfd",
+    "reference": "26- Romans 8:38-39 'Nothing Can Separate Us from God\u2019s Love'",
+    "question": "How often was Peter told to forgive a person?",
+    "options": [
       "Seventy times",
       "Seven times",
       "1000 times",
@@ -529,18 +966,38 @@
     "month": ""
   },
   {
-    "id": "aaf50a58-e61c-40eb-adf5-202bca7b5419",
+    "id": "8897f396-8cdc-48e7-90f9-1558caae1352",
     "reference": "26- Romans 8:38-39 'Nothing Can Separate Us from God\u2019s Love'",
-    "question": "To whom is there no condemnation? What is not able to separate us from the love of God? No, in all these things we are more than _____ through him who loved us.",
+    "question": "To whom is there no condemnation?",
     "options": [
       "Those who walk not after the flesh",
       "Those who walk after the spirit",
       "Them which are in Christ Jesus",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Them which are in Christ Jesus",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "10549315-b840-4f83-b643-76cf05ad1695",
+    "reference": "26- Romans 8:38-39 'Nothing Can Separate Us from God\u2019s Love'",
+    "question": "What is not able to separate us from the love of God?",
+    "options": [
       "Angels",
       "Things present",
       "Things to come",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "928a1f33-d45c-4c17-a6dc-930a6d5b2e34",
+    "reference": "27- Romans 16:20 \u201cThe God of peace will crush Satan\u201d",
+    "question": "No, in all these things we are more than _____ through him who loved us.",
+    "options": [
       "Heirs",
       "Servants",
       "Ambassadors",
@@ -551,18 +1008,38 @@
     "month": ""
   },
   {
-    "id": "d3e9e840-12fb-4f54-a728-8e0604d4d064",
+    "id": "55a930a6-74f3-4329-9d39-37f7ef30ba9f",
     "reference": "27- Romans 16:20 \u201cThe God of peace will crush Satan\u201d",
-    "question": "Who was a servant of the church of Cenchrea and a great help to many people including Paul? Who risked their lives for Paul and a church met in their home? Who did Paul urge the brethren to note?",
+    "question": "Who was a servant of the church of Cenchrea and a great help to many people including Paul?",
     "options": [
       "Mother Theresa",
       "Julia",
       "Junia",
-      "Phoebe",
+      "Phoebe"
+    ],
+    "answer": "Phoebe",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "434b3b6e-3603-419b-ba1b-a8f38f8b2665",
+    "reference": "27- Romans 16:20 \u201cThe God of peace will crush Satan\u201d",
+    "question": "Who risked their lives for Paul and a church met in their home?",
+    "options": [
       "Olympas and all the saints with him",
       "God's spirit",
       "Hermes and the brothers with him",
-      "Priscillia and Aquila",
+      "Priscillia and Aquila"
+    ],
+    "answer": "Priscillia and Aquila",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d6c46f2c-a9eb-4994-952a-38e49c4d480e",
+    "reference": "28- Isaiah 55:12 \u201cYou shall go out with joy and be led out with peace\u201d",
+    "question": "Who did Paul urge the brethren to note?",
+    "options": [
       "Those who were hospitable",
       "Those who gave generously",
       "Them which cause divisions and offenses",
@@ -573,14 +1050,24 @@
     "month": ""
   },
   {
-    "id": "80d29096-e71a-41be-bab7-4b455f4055d4",
+    "id": "1341c28f-095e-4d9c-8364-414c177356e9",
     "reference": "28- Isaiah 55:12 \u201cYou shall go out with joy and be led out with peace\u201d",
-    "question": "What will not return void? What will the redeemed of the Lord do?",
+    "question": "What will not return void?",
     "options": [
       "Our gifts",
       "Our prayers",
       "God's word",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "God's word",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "67d653c4-2027-4751-a877-f065aca93f75",
+    "reference": "29- John 14:18 \u201cI will not leave you orphans; I will come to you\u201d",
+    "question": "What will the redeemed of the Lord do?",
+    "options": [
       "Say so",
       "Shout with the voice of triumph",
       "Come with singing to Zion",
@@ -591,14 +1078,24 @@
     "month": ""
   },
   {
-    "id": "5cbab30a-260a-4347-b701-a639f3d0c264",
+    "id": "4bf10bf5-79cd-47b4-be16-a6b7d16ad49d",
     "reference": "29- John 14:18 \u201cI will not leave you orphans; I will come to you\u201d",
-    "question": "How did Jesus reply Philip's request \u201cLord, show us the Father\u201d? What did Jesus say we would do if we loved him?",
+    "question": "How did Jesus reply Philip's request \u201cLord, show us the Father\u201d?",
     "options": [
       "I am come in my Father's name",
       "He that has seen Me has seen the Father",
       "The fullness of the Godhead dwells in Me bodily",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "He that has seen Me has seen the Father",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "29c2919c-188f-45d9-b364-236e6edceb69",
+    "reference": "30- 1 John 1:7 \u201cWe have fellowship with one another\u201d",
+    "question": "What did Jesus say we would do if we loved him?",
+    "options": [
       "Love Him back",
       "Read His word",
       "Pray",
@@ -609,14 +1106,24 @@
     "month": ""
   },
   {
-    "id": "1e90f9bf-f531-415e-bd9c-bdfc54510c53",
+    "id": "9ac98e0d-a1c4-4788-9fb8-74f27db3d5d9",
     "reference": "30- 1 John 1:7 \u201cWe have fellowship with one another\u201d",
-    "question": "But if we walk in the light as He is in ____, we have fellowship with one another.... If we say we have not sinned, who are we?",
+    "question": "But if we walk in the light as He is in ____, we have fellowship with one another....",
     "options": [
       "Heaven",
       "Us",
       "The light",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "The light",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "6c549952-fc27-49ec-8ad5-3f2daaf18bfa",
+    "reference": "31- Isaiah 55:6 \u201cSeek the LORD while he may be found\u201d",
+    "question": "If we say we have not sinned, who are we?",
+    "options": [
       "Children of Israel",
       "Born saints",
       "Forgiven",
@@ -627,18 +1134,38 @@
     "month": ""
   },
   {
-    "id": "5afb84e3-f122-4f22-becd-5b1a5f35b525",
+    "id": "6809ad6e-d79c-49f6-ae0a-728e5f52645c",
     "reference": "31- Isaiah 55:6 \u201cSeek the LORD while he may be found\u201d",
-    "question": "Hear, and your soul shall ___; and I will make an everlasting covenant with you And nations who do not know you shall run to you, Because of _____ The mountains and the hills shall break forth into ____ before you, and all the trees of the field shall clap their hands? Month of November",
+    "question": "Hear, and your soul shall ___; and I will make an everlasting covenant with you",
     "options": [
       "Starve",
       "Thirst",
       "Live",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Live",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "29a8da0e-4492-469a-8075-2fde8baf45a2",
+    "reference": "31- Isaiah 55:6 \u201cSeek the LORD while he may be found\u201d",
+    "question": "And nations who do not know you shall run to you, Because of _____",
+    "options": [
       "You are blessed",
       "You are smart",
       "The Lord your God",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "The Lord your God",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "87388b10-9050-4bf1-b2bf-dbf67270c27e",
+    "reference": "31- Isaiah 55:6 \u201cSeek the LORD while he may be found\u201d",
+    "question": "The mountains and the hills shall break forth into ____ before you, and all the trees of the field shall clap their hands?",
+    "options": [
       "Singing",
       "Dancing",
       "Goodness",
@@ -649,18 +1176,38 @@
     "month": ""
   },
   {
-    "id": "679841f5-c884-4b0e-9e44-f8b6cf3a00ba",
+    "id": "8b71676d-7732-45c1-a202-fb6c0d37158e",
     "reference": "1- 2 Corinthians 5:7 \u201cWe walk by faith, not by sight\u201d",
-    "question": "Therefore we are always ________ knowing that, whilst we are at home in the body, we are absent from the Lord What does it mean to walk by faith? Now then we are _________ for Christ",
+    "question": "Therefore we are always ________ knowing that, whilst we are at home in the body, we are absent from the Lord",
     "options": [
       "Righteous",
       "Grateful",
       "Convince",
-      "Confident",
+      "Confident"
+    ],
+    "answer": "Confident",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "5d0eb092-5ca3-42bb-b321-23aa622f8bef",
+    "reference": "1- 2 Corinthians 5:7 \u201cWe walk by faith, not by sight\u201d",
+    "question": "What does it mean to walk by faith?",
+    "options": [
       "Seeing is believing",
       "Feeling is believing",
       "Hearing is believing",
-      "Trusting in the Lord always",
+      "Trusting in the Lord always"
+    ],
+    "answer": "Trusting in the Lord always",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "22f054be-001d-41d7-80dd-3f4cff91c163",
+    "reference": "2- Ephesians 1:22 \u201c[God] put all things under Christ\u2019s feet\u201d",
+    "question": "Now then we are _________ for Christ",
+    "options": [
       "Children",
       "Servants",
       "Ambassadors",
@@ -671,18 +1218,38 @@
     "month": ""
   },
   {
-    "id": "fe88a79d-0709-4020-9b4a-53bc06390798",
+    "id": "2a08608f-230c-4efa-b9b4-3fdf33761a6a",
     "reference": "2- Ephesians 1:22 \u201c[God] put all things under Christ\u2019s feet\u201d",
-    "question": "Who is the author of the book of Ephesians? Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with ____ spiritual blessings in heavenly places in Christ Jesus is far above?",
+    "question": "Who is the author of the book of Ephesians?",
     "options": [
       "John",
       "Mark",
       "Paul",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Paul",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f05e731e-c068-44c0-9a62-7502eb955fd2",
+    "reference": "2- Ephesians 1:22 \u201c[God] put all things under Christ\u2019s feet\u201d",
+    "question": "Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with ____ spiritual blessings in heavenly places in Christ",
+    "options": [
       "Some",
       "All",
       "No",
-      "Gifts",
+      "Gifts"
+    ],
+    "answer": "All",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b0569165-57c1-4f47-b2ca-4b7b660d2495",
+    "reference": "3- Psalm 55:22 \u201cHe shall never permit the righteous to be moved\u201d",
+    "question": "Jesus is far above?",
+    "options": [
       "All principality",
       "All power",
       "All might",
@@ -693,14 +1260,24 @@
     "month": ""
   },
   {
-    "id": "0d172029-c58a-4fa4-8709-ccd5e8bf62e9",
+    "id": "a36d8f38-e4e2-41fe-96b4-4ccb0464fbc5",
     "reference": "3- Psalm 55:22 \u201cHe shall never permit the righteous to be moved\u201d",
-    "question": "As for me, I will call upon God; and the Lord shall ___ me The words of his mouth were ____ than butter, but war was in his heart",
+    "question": "As for me, I will call upon God; and the Lord shall ___ me",
     "options": [
       "Favor",
       "Forgive",
       "Bless",
-      "Save",
+      "Save"
+    ],
+    "answer": "Save",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "74fe9964-d4b0-45f4-a7ea-0ec85c356946",
+    "reference": "4- Ephesians 3:17 \u201cThat Christ may dwell in your hearts through faith\u201d",
+    "question": "The words of his mouth were ____ than butter, but war was in his heart",
+    "options": [
       "Whiter",
       "Smoother",
       "Gracious",
@@ -711,18 +1288,38 @@
     "month": ""
   },
   {
-    "id": "d10253d2-cd50-47b4-a191-16915f2a6715",
+    "id": "9b0d359e-6d93-444d-9250-9f192a77f138",
     "reference": "4- Ephesians 3:17 \u201cThat Christ may dwell in your hearts through faith\u201d",
-    "question": "Whereof I was made a minister, according to the ____ of the grace of God Whereby, when ye ____, ye may understand my knowledge in the mystery of Christ In whom we have boldness and _____ with confidence by the faith of him",
+    "question": "Whereof I was made a minister, according to the ____ of the grace of God",
     "options": [
       "Teaching",
       "Training",
       "Gift",
-      "Goodness",
+      "Goodness"
+    ],
+    "answer": "Gift",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4a3e7df2-f12a-4eca-99e9-03ba14bf4635",
+    "reference": "4- Ephesians 3:17 \u201cThat Christ may dwell in your hearts through faith\u201d",
+    "question": "Whereby, when ye ____, ye may understand my knowledge in the mystery of Christ",
+    "options": [
       "Read",
       "Seek",
       "Pray",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Read",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "9f4513e4-70bb-48c0-86e5-6a5f7980aa20",
+    "reference": "5- Ephesians 3:20 God is \u201cable to do exceedingly abundantly above all that we ask or think\u201d",
+    "question": "In whom we have boldness and _____ with confidence by the faith of him",
+    "options": [
       "Assurance",
       "Hope",
       "Access",
@@ -733,18 +1330,38 @@
     "month": ""
   },
   {
-    "id": "abc434fc-6b54-40eb-9df4-5319e3140af6",
+    "id": "8f8b9faa-d78d-4cd1-b0b5-518eb3c8c528",
     "reference": "5- Ephesians 3:20 God is \u201cable to do exceedingly abundantly above all that we ask or think\u201d",
-    "question": "What is God able to do? That Christ may dwell in your _____ by faith; that ye, being rooted and grounded in love Unto him be _____ in the church by Christ Jesus throughout all ages, world without end. Amen.",
+    "question": "What is God able to do?",
     "options": [
       "Miracle",
       "Healing",
       "Singing",
-      "All things",
+      "All things"
+    ],
+    "answer": "All things",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "cdd9fb19-f73a-4fc2-a84c-a93de84f6309",
+    "reference": "5- Ephesians 3:20 God is \u201cable to do exceedingly abundantly above all that we ask or think\u201d",
+    "question": "That Christ may dwell in your _____ by faith; that ye, being rooted and grounded in love",
+    "options": [
       "Hearts",
       "Heads",
       "Homes",
-      "Churches",
+      "Churches"
+    ],
+    "answer": "Hearts",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "6eb581aa-9f8b-4143-8725-f2caed841339",
+    "reference": "6- 1 Timothy 1:14 \u201cThe grace of our Lord [is] exceedingly abundant\u201d",
+    "question": "Unto him be _____ in the church by Christ Jesus throughout all ages, world without end. Amen.",
+    "options": [
       "Glory",
       "Power",
       "Honor",
@@ -755,14 +1372,24 @@
     "month": ""
   },
   {
-    "id": "88c53024-a212-4b72-9870-4c06fb171491",
+    "id": "4309710b-ffaf-4003-8390-0403fd48b7e8",
     "reference": "6- 1 Timothy 1:14 \u201cThe grace of our Lord [is] exceedingly abundant\u201d",
-    "question": "But we know that the law is _____, if a man use it lawfully Prior to his conversion Paul was",
+    "question": "But we know that the law is _____, if a man use it lawfully",
     "options": [
       "Favorable",
       "Kind",
       "Good",
-      "Fair",
+      "Fair"
+    ],
+    "answer": "Good",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "89195ecb-77bf-4a9c-9e32-917953484b2d",
+    "reference": "7- 1 Timothy 2:5 \u201cThere is one God and one Mediator between God and men\u201d",
+    "question": "Prior to his conversion Paul was",
+    "options": [
       "A blasphemer",
       "A persecutor",
       "An injurious",
@@ -773,18 +1400,38 @@
     "month": ""
   },
   {
-    "id": "50ff6b94-b0f2-41c3-b62e-88bf299518ef",
+    "id": "c137da12-fe72-4dd2-8d93-d30b3bcb746c",
     "reference": "7- 1 Timothy 2:5 \u201cThere is one God and one Mediator between God and men\u201d",
-    "question": "Who will have ____ men to be saved, and to come unto the knowledge of the truth For whom did Jesus give himself as a ransom? Was Even formed before Adam?",
+    "question": "Who will have ____ men to be saved, and to come unto the knowledge of the truth",
     "options": [
       "Some",
       "Smart/Intelligent",
       "Good",
-      "All",
+      "All"
+    ],
+    "answer": "All",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "de8d3464-92da-4a0a-a770-c0afb75f8d21",
+    "reference": "7- 1 Timothy 2:5 \u201cThere is one God and one Mediator between God and men\u201d",
+    "question": "For whom did Jesus give himself as a ransom?",
+    "options": [
       "Faithful ones",
       "Intelligent ones",
       "All",
-      "Christians",
+      "Christians"
+    ],
+    "answer": "All",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "43f4db96-89ca-4175-b743-ef8add435498",
+    "reference": "8- 1 Chronicles 16:22 \u201cDo not touch My anointed ones\u201d",
+    "question": "Was Even formed before Adam?",
+    "options": [
       "Yes",
       "No",
       "At the same time",
@@ -795,64 +1442,122 @@
     "month": ""
   },
   {
-    "id": "83959acd-2d03-4a34-a507-2c67a5069585",
+    "id": "d36e2419-f1df-49f4-ab39-ec1f6fbf4a70",
     "reference": "8- 1 Chronicles 16:22 \u201cDo not touch My anointed ones\u201d",
-    "question": "How often were Benaiah and Jahaziel expected to blow the trumpets? Look to the Lord and his strength; seek his face _____ Who made the heavens? What were Heman and Jeduthun responsible for?",
+    "question": "How often were Benaiah and Jahaziel expected to blow the trumpets?",
     "options": [
       "On the sabbath only",
       "Any day of their choices",
       "Regularly",
-      "At midnight",
-      "Always",
-      "When in trouble",
-      "When you are blessed",
-      "All the above",
-      "All gods",
-      "Adam and Eve",
-      "Nobody",
-      "The Lord",
-      "Teaching",
-      "Cleaning the temple",
-      "Sounding the trumpets and cymbals",
-      "Playing of the other instruments for sacred song",
-      "c & d"
+      "At midnight"
     ],
-    "answer": "c & d",
+    "answer": "Regularly",
     "quarter": "Q4",
     "month": ""
   },
   {
-    "id": "d79551ec-1518-41ab-ae49-f088a36c0057",
+    "id": "646bafe2-8a6e-4ee0-87fe-83fe17468e9a",
+    "reference": "8- 1 Chronicles 16:22 \u201cDo not touch My anointed ones\u201d",
+    "question": "Look to the Lord and his strength; seek his face _____",
+    "options": [
+      "Always",
+      "When in trouble",
+      "When you are blessed",
+      "All the above"
+    ],
+    "answer": "Always",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "3abb8355-b531-44e6-9220-2a7f9792eb52",
+    "reference": "8- 1 Chronicles 16:22 \u201cDo not touch My anointed ones\u201d",
+    "question": "Who made the heavens?",
+    "options": [
+      "All gods",
+      "Adam and Eve",
+      "Nobody",
+      "The Lord"
+    ],
+    "answer": "The Lord",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4c1575b0-be63-4f76-a7fc-17d15411caa1",
+    "reference": "8- 1 Chronicles 16:22 \u201cDo not touch My anointed ones\u201d",
+    "question": "What were Heman and Jeduthun responsible for?",
+    "options": [
+      "Teaching",
+      "Cleaning the temple",
+      "Sounding the trumpets and cymbals",
+      "Playing of the other instruments for sacred song"
+    ],
+    "answer": "",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f2b866d1-35b6-4d44-801b-662d4c899540",
     "reference": "9- Psalm 42:1 \u201cSo pants my soul for you, O God\u201d",
-    "question": "My soul thirsts for ____ for the living God. I say to God my ____, \u201cWhy have you forgotten me?...\u201d",
+    "question": "My soul thirsts for ____ for the living God.",
     "options": [
       "Water",
       "Nourishment",
       "Praise",
-      "God",
+      "God"
+    ],
+    "answer": "God",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "37473a7f-c151-42f1-94f4-527fe6d26fd9",
+    "reference": "9- Psalm 42:1 \u201cSo pants my soul for you, O God\u201d",
+    "question": "I say to God my ____, \u201cWhy have you forgotten me?...\u201d",
+    "options": [
       "Savior",
       "Healer",
       "Provider",
-      "Rock",
-      "All of the above"
+      "Rock"
     ],
     "answer": "Rock",
     "quarter": "Q4",
     "month": ""
   },
   {
-    "id": "87e8c71b-ab77-41b1-a6fe-e81d8038eda5",
+    "id": "013debe0-146d-458e-977d-02054f653684",
     "reference": "10- Matthew 14:31 \u201cO you of little faith, why did you doubt?\u201d",
-    "question": "Why was John arrested? What did Herod's daughter request from him for her birthday? When the disciples saw Jesus walking on the lake, what did they think they were seeing?",
+    "question": "Why was John arrested?",
     "options": [
       "He was baptizing many people",
       "He was not respecting the authority",
       "He reproached Herod for taking Philip's wife",
-      "He was too loud",
+      "He was too loud"
+    ],
+    "answer": "He reproached Herod for taking Philip's wife",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "fbc04c21-4c11-4f5f-b734-234db98e05b4",
+    "reference": "10- Matthew 14:31 \u201cO you of little faith, why did you doubt?\u201d",
+    "question": "What did Herod's daughter request from him for her birthday?",
+    "options": [
       "Chocolate",
       "New clothes",
       "John the Baptist head",
-      "A house",
+      "A house"
+    ],
+    "answer": "John the Baptist head",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "1f7eccfe-63c8-4cee-824c-bbb59aee049f",
+    "reference": "11- James 1:6 \u201cAsk in faith with no doubting\u201d",
+    "question": "When the disciples saw Jesus walking on the lake, what did they think they were seeing?",
+    "options": [
       "An angel",
       "A vampire",
       "A ghost",
@@ -863,18 +1568,38 @@
     "month": ""
   },
   {
-    "id": "8850967d-1f7e-4a8b-b519-d0619ab14790",
+    "id": "7823525c-7469-49df-920f-00fd16f65271",
     "reference": "11- James 1:6 \u201cAsk in faith with no doubting\u201d",
-    "question": "Consider it pure ____, my brothers, whenever you face trials of many kinds If any of you lacks _____, he should ask God, who gives generously to all What is a person who asks from God but doubt compare to?",
+    "question": "Consider it pure ____, my brothers, whenever you face trials of many kinds",
     "options": [
       "Fame",
       "Knowledge",
       "Joy",
-      "Faith",
+      "Faith"
+    ],
+    "answer": "Joy",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f4da2f1b-dda2-4a6d-8c80-9ce268a8c441",
+    "reference": "11- James 1:6 \u201cAsk in faith with no doubting\u201d",
+    "question": "If any of you lacks _____, he should ask God, who gives generously to all",
+    "options": [
       "Money",
       "Job",
       "Wisdom",
-      "Wine",
+      "Wine"
+    ],
+    "answer": "Wisdom",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "443e4e99-3c92-40c4-9c60-8a4e7d268664",
+    "reference": "12- 1 Peter 1: 8-9 \u201cReceiving the end of your faith\u201d",
+    "question": "What is a person who asks from God but doubt compare to?",
+    "options": [
       "A faithless person",
       "An unbeliever",
       "A wave of the sea",
@@ -885,18 +1610,38 @@
     "month": ""
   },
   {
-    "id": "8c20a248-eb9c-429e-96b1-f8b3cfaef280",
+    "id": "c17531a4-4a4c-4920-8bf1-273b487c6153",
     "reference": "12- 1 Peter 1: 8-9 \u201cReceiving the end of your faith\u201d",
-    "question": "Why must Christians rejoice even in trials? Therefore, prepare your minds for ___; be self-controlled; set your hope fully on the grace to be given you when Jesus Christ is revealed. Why must Christians be holy?",
+    "question": "Why must Christians rejoice even in trials?",
     "options": [
       "They get more closer to God through trials",
       "They are transformed from glory to glory",
       "Their faith is refined",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Their faith is refined",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "0d20b2e2-6218-4b3d-88db-206d3b773095",
+    "reference": "12- 1 Peter 1: 8-9 \u201cReceiving the end of your faith\u201d",
+    "question": "Therefore, prepare your minds for ___; be self-controlled; set your hope fully on the grace to be given you when Jesus Christ is revealed.",
+    "options": [
       "Love",
       "Understanding",
       "Action",
-      "Grace",
+      "Grace"
+    ],
+    "answer": "Action",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4b6f2fd2-cd94-479e-a4d5-ae717c268bbc",
+    "reference": "13- Hebrews 11:6 \u201cWithout faith it is impossible to please Him\u201d",
+    "question": "Why must Christians be holy?",
+    "options": [
       "It is good preparing for the kingdom",
       "Because God command them to be",
       "Because God is holy",
@@ -907,18 +1652,38 @@
     "month": ""
   },
   {
-    "id": "ff307089-a00e-4a06-b90b-7545bc77344c",
+    "id": "ba52d266-2a32-4588-b101-1c5fe5a24b44",
     "reference": "13- Hebrews 11:6 \u201cWithout faith it is impossible to please Him\u201d",
-    "question": "Why is it impossible to please God without faith? But we are not of those who shrink back and are destroyed, but of those who ___ and are saved. Let us draw near to God with a ____ heart in full assurance of faith",
+    "question": "Why is it impossible to please God without faith?",
     "options": [
       "Because He is everywhere",
       "Because He say so",
       "Because anyone who comes to him must believe that he exists",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Because anyone who comes to him must believe that he exists",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "47b2a597-0762-4d52-9020-6602d402cbbb",
+    "reference": "13- Hebrews 11:6 \u201cWithout faith it is impossible to please Him\u201d",
+    "question": "But we are not of those who shrink back and are destroyed, but of those who ___ and are saved.",
+    "options": [
       "Trust",
       "Believe",
       "a & b",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Believe",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "53d52f4a-9f01-4fd6-bca5-ebcebfabba9c",
+    "reference": "14- 1 Timothy 6:11 \u201cPursue \u2026 faith, love, patience\u201d",
+    "question": "Let us draw near to God with a ____ heart in full assurance of faith",
+    "options": [
       "Sincere",
       "Joyful",
       "Pure",
@@ -929,18 +1694,38 @@
     "month": ""
   },
   {
-    "id": "7ef76aee-3bfb-4351-b3e7-1de9ff04bdd9",
+    "id": "504eab39-384e-4657-9d30-34d7b99a6d41",
     "reference": "14- 1 Timothy 6:11 \u201cPursue \u2026 faith, love, patience\u201d",
-    "question": "For we brought ___ into the world, and we can take nothing out of it. For the love of ____ is a root of all kinds of evil. Fight the good fight of the ____.",
+    "question": "For we brought ___ into the world, and we can take nothing out of it.",
     "options": [
       "Nothing",
       "Children",
       "Joy",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Nothing",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "3dd622ad-f8f5-47f1-a6af-d7bc9d0df158",
+    "reference": "14- 1 Timothy 6:11 \u201cPursue \u2026 faith, love, patience\u201d",
+    "question": "For the love of ____ is a root of all kinds of evil.",
+    "options": [
       "Money",
       "Food",
       "Alcohol",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Money",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "38475d09-04cc-4113-9ca3-3fede6b43590",
+    "reference": "15- 2 Timothy 3:16 \u201cAll Scripture is given by inspiration of God\u201d",
+    "question": "Fight the good fight of the ____.",
+    "options": [
       "Righteousness",
       "Peace",
       "Faith",
@@ -951,14 +1736,24 @@
     "month": ""
   },
   {
-    "id": "2130087d-945f-462e-a36e-87c5e1ea52c8",
+    "id": "a27f379c-3913-443d-9e2b-6cf45ea1b1ba",
     "reference": "15- 2 Timothy 3:16 \u201cAll Scripture is given by inspiration of God\u201d",
-    "question": "In fact, everyone who wants to live a godly life in Christ Jesus will be ____ What is the scriptures profitable for?",
+    "question": "In fact, everyone who wants to live a godly life in Christ Jesus will be ____",
     "options": [
       "Saved",
       "Blessed",
       "Persecuted",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Persecuted",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "5a12a128-c3d0-4d75-b0ad-751d4b1021ba",
+    "reference": "16- 2 Timothy 4:18 \u201cThe Lord will deliver me from every evil work and preserve me\u201d",
+    "question": "What is the scriptures profitable for?",
+    "options": [
       "Doctrine",
       "Reproof",
       "Correction",
@@ -969,18 +1764,38 @@
     "month": ""
   },
   {
-    "id": "4547811f-e6af-4a4d-947e-958c4b56075e",
+    "id": "02aa3f4b-c61e-402d-a630-2c86381f8a30",
     "reference": "16- 2 Timothy 4:18 \u201cThe Lord will deliver me from every evil work and preserve me\u201d",
-    "question": "For I am now ready to be ____, and the time of my departure is at hand. What was the profession of Alexander? The Lord Jesus Christ be with thy ___?",
+    "question": "For I am now ready to be ____, and the time of my departure is at hand.",
     "options": [
       "Sacrificed",
       "Crucified",
       "Offered",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Offered",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "05f8eed3-4cfb-481e-950e-5e771ccd056a",
+    "reference": "16- 2 Timothy 4:18 \u201cThe Lord will deliver me from every evil work and preserve me\u201d",
+    "question": "What was the profession of Alexander?",
+    "options": [
       "Carpenter",
       "Priest",
       "Coppersmith",
-      "Fisherman",
+      "Fisherman"
+    ],
+    "answer": "Coppersmith",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2b310cb4-d043-4bad-aa4c-e5319aac9c5d",
+    "reference": "17- 1 Peter 1:6-7 \u201cThough [my faith] is tested by fire\u201d",
+    "question": "The Lord Jesus Christ be with thy ___?",
+    "options": [
       "Family",
       "Tribe",
       "Nation",
@@ -991,14 +1806,24 @@
     "month": ""
   },
   {
-    "id": "ecc4453e-d657-4f37-a5ec-1f947ea15525",
+    "id": "c06072ae-d59e-4fc2-bc82-fb862cc5e8d3",
     "reference": "17- 1 Peter 1:6-7 \u201cThough [my faith] is tested by fire\u201d",
-    "question": "As ____ children, not fashioning yourself according to the former lusts in your ignorance Forasmuch as ye know that ye were not _____ with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers",
+    "question": "As ____ children, not fashioning yourself according to the former lusts in your ignorance",
     "options": [
       "Kind",
       "Obedient",
       "Vulnerable",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Obedient",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f8dbe426-0f6e-41ed-9a2f-d077c53a4f0d",
+    "reference": "18- 1 Peter 5:6 \u201cHumble yourselves under the mighty hand of God\u201d",
+    "question": "Forasmuch as ye know that ye were not _____ with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers",
+    "options": [
       "Saved",
       "Blessed",
       "Rescued",
@@ -1009,18 +1834,38 @@
     "month": ""
   },
   {
-    "id": "db181fa3-b79e-4d96-a97f-2902a85d9aad",
+    "id": "0b8b4b96-987d-49c7-bbec-afecb7de48cb",
     "reference": "18- 1 Peter 5:6 \u201cHumble yourselves under the mighty hand of God\u201d",
-    "question": "Likewise, ye younger, ____ yourself unto the elder. Who act like a roaring lion? ______ the flock of God which is among you, taking the oversight thereof, not by constraint,...",
+    "question": "Likewise, ye younger, ____ yourself unto the elder.",
     "options": [
       "Submit",
       "Cry",
       "Lean",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Submit",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d13fd408-79c0-4353-b729-00b725a0bbe7",
+    "reference": "18- 1 Peter 5:6 \u201cHumble yourselves under the mighty hand of God\u201d",
+    "question": "Who act like a roaring lion?",
+    "options": [
       "Nothing",
       "God",
       "A fool",
-      "The devil",
+      "The devil"
+    ],
+    "answer": "The devil",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "07bf22ac-3e80-467c-8fac-6b4158452a69",
+    "reference": "19- 1 John 1:8-10 \u201cIf we confess our sins, He is faithful and just to forgive \u201d",
+    "question": "______ the flock of God which is among you, taking the oversight thereof, not by constraint,...",
+    "options": [
       "Feed",
       "Take care of",
       "Support",
@@ -1031,18 +1876,38 @@
     "month": ""
   },
   {
-    "id": "157b2e0b-0310-4604-91e0-e8e002d0b49c",
+    "id": "9a0e0b92-0033-46b3-8cee-26d5988827d3",
     "reference": "19- 1 John 1:8-10 \u201cIf we confess our sins, He is faithful and just to forgive \u201d",
-    "question": "If any man boast not to never have sinned, what he is? And these things write we unto you, that your ____ may be full. According to 1 John 1, who is God?",
+    "question": "If any man boast not to never have sinned, what he is?",
     "options": [
       "A true believer",
       "A liar",
       "A hypocrite",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "A liar",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b1e6899d-68f5-4c36-8607-9f748277faf6",
+    "reference": "19- 1 John 1:8-10 \u201cIf we confess our sins, He is faithful and just to forgive \u201d",
+    "question": "And these things write we unto you, that your ____ may be full.",
+    "options": [
       "Joy",
       "Righteousness",
       "Holiness",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Joy",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f6652892-9261-48c9-9ba5-ea1537c58839",
+    "reference": "20- Romans 10:8-10 \u201cIf you confess with your mouth the Lord Jesus\u201d",
+    "question": "According to 1 John 1, who is God?",
+    "options": [
       "The creator",
       "The king",
       "The father",
@@ -1053,18 +1918,38 @@
     "month": ""
   },
   {
-    "id": "70827270-cfae-43f6-8aee-4708de32edf3",
+    "id": "dab51db3-3dbf-49f9-be4b-d983a70d5520",
     "reference": "20- Romans 10:8-10 \u201cIf you confess with your mouth the Lord Jesus\u201d",
-    "question": "What is Paul heart's desire and prayer for Israel? According to Paul how can one be saved? What happens to anyone who call on the name of the Lord?",
+    "question": "What is Paul heart's desire and prayer for Israel?",
     "options": [
       "That they might repent",
       "That they might know peace",
       "That they might be saved",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "That they might be saved",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "443b52ed-117b-49b6-8c31-9809c756ab09",
+    "reference": "20- Romans 10:8-10 \u201cIf you confess with your mouth the Lord Jesus\u201d",
+    "question": "According to Paul how can one be saved?",
+    "options": [
       "Confess with thy mouth",
       "Believe in thine heart that God raised Jesus from the dead",
       "a & b",
-      "Be faithful",
+      "Be faithful"
+    ],
+    "answer": "a & b",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b63de52b-709b-4185-aff8-8af428bbe5c8",
+    "reference": "21- Romans 10:11 \u201cWhoever believes in Him will not be put to shame\u201d",
+    "question": "What happens to anyone who call on the name of the Lord?",
+    "options": [
       "They shall be blessed",
       "They shall never see death",
       "They shall be friends of Jesus",
@@ -1075,18 +1960,38 @@
     "month": ""
   },
   {
-    "id": "f5d4c16c-3b0c-4466-8413-48ff4c0e7566",
+    "id": "d1b088ea-df6f-4e7a-b665-a4c47318586e",
     "reference": "21- Romans 10:11 \u201cWhoever believes in Him will not be put to shame\u201d",
-    "question": "For there is no _____ between the Jew and the Greek How are the feet of them that preach the gospel? How does faith come?",
+    "question": "For there is no _____ between the Jew and the Greek",
     "options": [
       "Difference",
       "Similarity",
       "Love",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Difference",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "c3bd83ef-b6da-4c8e-919d-45abb9d1bfa1",
+    "reference": "21- Romans 10:11 \u201cWhoever believes in Him will not be put to shame\u201d",
+    "question": "How are the feet of them that preach the gospel?",
+    "options": [
       "Bless",
       "Shining",
       "Gracious",
-      "Beautiful",
+      "Beautiful"
+    ],
+    "answer": "Beautiful",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "7a96b420-f477-42da-ba38-10f37340b852",
+    "reference": "22- Hebrews 4:16 \u201cObtain mercy and find grace to help in time of need\u201d",
+    "question": "How does faith come?",
+    "options": [
       "By hearing the word of God",
       "At birth",
       "It is a gift",
@@ -1097,18 +2002,38 @@
     "month": ""
   },
   {
-    "id": "eb71287c-4f31-4221-acdf-58ec02773faf",
+    "id": "4fd5108f-607d-4d43-a460-f2fcb3faf2cb",
     "reference": "22- Hebrews 4:16 \u201cObtain mercy and find grace to help in time of need\u201d",
-    "question": "According to Hebrews 4, does God continue to work? When did God rest? Can anything be hidden from God?",
+    "question": "According to Hebrews 4, does God continue to work?",
     "options": [
       "Sometimes",
       "He always resting",
       "Works were finished from the foundation of the world",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Works were finished from the foundation of the world",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "898c5b12-e2b4-4f90-9d61-dd9348f39941",
+    "reference": "22- Hebrews 4:16 \u201cObtain mercy and find grace to help in time of need\u201d",
+    "question": "When did God rest?",
+    "options": [
       "Never",
       "On the third day",
       "On the seventh day",
-      "In the winter",
+      "In the winter"
+    ],
+    "answer": "On the seventh day",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f56d9897-0faf-4f3d-bb39-dc8be1f608f4",
+    "reference": "23- Romans 5:1 \u201cWe have peace with God\u201d",
+    "question": "Can anything be hidden from God?",
+    "options": [
       "Our secrets",
       "Our sins",
       "Nothing",
@@ -1119,14 +2044,24 @@
     "month": ""
   },
   {
-    "id": "1957c07c-1109-4978-b675-f985ae80015e",
+    "id": "0deae12f-27a8-474a-9a27-6e3dc9126547",
     "reference": "23- Romans 5:1 \u201cWe have peace with God\u201d",
-    "question": "How are we justified? God commendeth his love toward us, in that, while were yet ____, Christ died for us.",
+    "question": "How are we justified?",
     "options": [
       "By faith",
       "Through grace",
       "Through eternal sacrifice",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "By faith",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "be859fe0-2f5f-4c2b-8cb9-1dd64ac215f7",
+    "reference": "24- Romans 5:2 \u201cThrough [Christ] we have access by faith into this grace in which we stand\u201d",
+    "question": "God commendeth his love toward us, in that, while were yet ____, Christ died for us.",
+    "options": [
       "Children",
       "Singles",
       "Sinners",
@@ -1137,14 +2072,24 @@
     "month": ""
   },
   {
-    "id": "c39796a6-ec24-46c7-b0f1-31be10fea37c",
+    "id": "e8f73529-f568-4a99-84ca-cd79fa1f0f80",
     "reference": "24- Romans 5:2 \u201cThrough [Christ] we have access by faith into this grace in which we stand\u201d",
-    "question": "For if, when we were ___, we were reconciled to God by the death of his Son And not only so, but we ___ in tribulations also: knowing that tribulation worketh patience",
+    "question": "For if, when we were ___, we were reconciled to God by the death of his Son",
     "options": [
       "Enemies",
       "Children",
       "Orphans",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Enemies",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "dd9f1bbf-644b-412b-aeb7-d56dffcf9bd1",
+    "reference": "25- Psalm 107:1 \u201cHis mercy endures forever\u201d",
+    "question": "And not only so, but we ___ in tribulations also: knowing that tribulation worketh patience",
+    "options": [
       "Glory",
       "Cry",
       "Grow",
@@ -1155,18 +2100,38 @@
     "month": ""
   },
   {
-    "id": "07422fa1-4f9f-4ac3-9ad8-bbb709b705aa",
+    "id": "98efd020-21e0-40ff-8252-468bf03c6de2",
     "reference": "25- Psalm 107:1 \u201cHis mercy endures forever\u201d",
-    "question": "What did the Lord do when the children of Israel cried unto him? For he hath _____ the gates of brass, and cut the bars of iron in sunder Oh that men would ___ the Lord for his goodness, and for his wonderful works to the children of men!",
+    "question": "What did the Lord do when the children of Israel cried unto him?",
     "options": [
       "He rebuked them",
       "He forgave them",
       "He delivered them",
-      "He did nothing",
+      "He did nothing"
+    ],
+    "answer": "He delivered them",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "0aa07f94-2e38-4c64-95f9-4a9d5d20db76",
+    "reference": "25- Psalm 107:1 \u201cHis mercy endures forever\u201d",
+    "question": "For he hath _____ the gates of brass, and cut the bars of iron in sunder",
+    "options": [
       "Closed",
       "Opened",
       "Highlighted",
-      "Broken",
+      "Broken"
+    ],
+    "answer": "Broken",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2fbf9d41-176e-45a1-a29f-e071d727c25d",
+    "reference": "26- 1 John 3:20 \u201cIf our heart condemns us\u201d",
+    "question": "Oh that men would ___ the Lord for his goodness, and for his wonderful works to the children of men!",
+    "options": [
       "Seek",
       "Sing to",
       "Cry to",
@@ -1177,18 +2142,38 @@
     "month": ""
   },
   {
-    "id": "c68a05fa-cf00-4916-b1bb-139983e6891c",
+    "id": "68cb64a5-cfc0-4c71-9092-12916d9d9262",
     "reference": "26- 1 John 3:20 \u201cIf our heart condemns us\u201d",
-    "question": "Can anyone born of God commit sin? How should children of God love? Beloved, if our heart ____ us not, then have we confidence toward God",
+    "question": "Can anyone born of God commit sin?",
     "options": [
       "Absolutely",
       "Always",
       "No",
-      "Sometimes",
+      "Sometimes"
+    ],
+    "answer": "No",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a3d48c29-70d1-4775-99d8-01a71e0190f7",
+    "reference": "26- 1 John 3:20 \u201cIf our heart condemns us\u201d",
+    "question": "How should children of God love?",
+    "options": [
       "Using nice words",
       "In deed",
       "In truth",
-      "b & c",
+      "b & c"
+    ],
+    "answer": "b & c",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "72d194ad-7656-497d-a8fd-eabfc5d03319",
+    "reference": "27- Jude 1:20 \u201cBuilding yourselves up on your most holy faith\u201d",
+    "question": "Beloved, if our heart ____ us not, then have we confidence toward God",
+    "options": [
       "Trick",
       "Condemn",
       "Survive",
@@ -1199,18 +2184,38 @@
     "month": ""
   },
   {
-    "id": "0ba57563-8445-483e-a66a-c1f2f266130f",
+    "id": "a177d5cc-b590-4c59-9646-f89828019bb1",
     "reference": "27- Jude 1:20 \u201cBuilding yourselves up on your most holy faith\u201d",
-    "question": "Who is Jude's brother? How many saints did Enoch prophesy the Lord would come with? Keep yourselves in the ____ of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
+    "question": "Who is Jude's brother?",
     "options": [
       "Peter",
       "Paul",
       "John",
-      "James",
+      "James"
+    ],
+    "answer": "James",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2b712b39-971f-4aa0-9491-4a05a42905a4",
+    "reference": "27- Jude 1:20 \u201cBuilding yourselves up on your most holy faith\u201d",
+    "question": "How many saints did Enoch prophesy the Lord would come with?",
+    "options": [
       "One hundred",
       "Seventy",
       "Seventy seven",
-      "Ten thousands",
+      "Ten thousands"
+    ],
+    "answer": "Ten thousands",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "6b759a3e-081f-4c99-9f2c-5186708ef28f",
+    "reference": "28- Revelation 1:3 \u201cBlessed is he who reads and those who hear the words of this prophecy\u201d",
+    "question": "Keep yourselves in the ____ of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
+    "options": [
       "Peace",
       "Blessings",
       "Love",
@@ -1221,14 +2226,24 @@
     "month": ""
   },
   {
-    "id": "d0a148b2-fad5-4823-bb92-6c930643c5d7",
+    "id": "649ed810-6f66-4772-b52d-3492006f00c3",
     "reference": "28- Revelation 1:3 \u201cBlessed is he who reads and those who hear the words of this prophecy\u201d",
-    "question": "What is the meaning of Alpha and Omega? And from Jesus Christ, who is the ____ witness, and the first begotten of the dead, and the prince of the kings of the earth",
+    "question": "What is the meaning of Alpha and Omega?",
     "options": [
       "The only and true God",
       "The creator and mediator",
       "The beginning and the ending",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "The beginning and the ending",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b577fdbb-1481-44a1-8a6d-986941a40757",
+    "reference": "29- Revelation 3:20 \u201cBehold, I stand at the door and knock\u201d",
+    "question": "And from Jesus Christ, who is the ____ witness, and the first begotten of the dead, and the prince of the kings of the earth",
+    "options": [
       "Only",
       "Great",
       "Faithful",
@@ -1239,14 +2254,24 @@
     "month": ""
   },
   {
-    "id": "5c188a9e-fe5e-4743-a689-e5f9ebec31ce",
+    "id": "4787291b-fef7-487a-b618-2091441dc936",
     "reference": "29- Revelation 3:20 \u201cBehold, I stand at the door and knock\u201d",
-    "question": "___ the things which thou hast seen, and the things which are, and the things which shall be hereafter To him that ____ will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne",
+    "question": "___ the things which thou hast seen, and the things which are, and the things which shall be hereafter",
     "options": [
       "Study",
       "Write",
       "Meditate on",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Write",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d8605d43-49d2-4a59-a600-edb320a64d9d",
+    "reference": "30- 2 Peter 3:8 \u201cWith the Lord one day is as a thousand years\u201d",
+    "question": "To him that ____ will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne",
+    "options": [
       "Is faithful",
       "Is good",
       "Pray",
@@ -1257,14 +2282,24 @@
     "month": ""
   },
   {
-    "id": "132729df-9f2f-48cf-9fd8-0643750924ef",
+    "id": "9f5a096f-ae1e-474e-8e02-b864ba2473ee",
     "reference": "30- 2 Peter 3:8 \u201cWith the Lord one day is as a thousand years\u201d",
-    "question": "The Lord is not ____ concerning his promise, as some men count slackness... But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ Month of December",
+    "question": "The Lord is not ____ concerning his promise, as some men count slackness...",
     "options": [
       "Quick",
       "Forgetful",
       "Slack",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Slack",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "ac88550e-d80b-4f96-a47e-e7e3a46369b9",
+    "reference": "30- 2 Peter 3:8 \u201cWith the Lord one day is as a thousand years\u201d",
+    "question": "But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ",
+    "options": [
       "Be",
       "Live",
       "Hope",
@@ -1275,18 +2310,38 @@
     "month": ""
   },
   {
-    "id": "0358ee8b-faeb-4e46-bba3-88399852a34e",
+    "id": "faaaec4a-cd05-4245-b3cf-4697e0772066",
     "reference": "1- Hebrews 4:2-3 \u201cWe who have believed do enter that rest\u201d",
-    "question": "And they to whom it was first preached entered not in because of _____ When did God rest? For the word of God is?",
+    "question": "And they to whom it was first preached entered not in because of _____",
     "options": [
       "Lack of faith",
       "Disobedience",
       "Their selfishness",
-      "Unbelief",
+      "Unbelief"
+    ],
+    "answer": "Unbelief",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "6ffbb7d2-9e05-4338-a02c-bcc7c24be1b8",
+    "reference": "1- Hebrews 4:2-3 \u201cWe who have believed do enter that rest\u201d",
+    "question": "When did God rest?",
+    "options": [
       "On the sabbath",
       "He did not",
       "On Monday",
-      "On the seventh day",
+      "On the seventh day"
+    ],
+    "answer": "On the seventh day",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a82e0f23-8431-498f-981a-17d5f3c0ade7",
+    "reference": "2- Deuteronomy 7:9 \u201cHe is God \u2026 who keeps covenant\u201d",
+    "question": "For the word of God is?",
+    "options": [
       "Quick",
       "Powerful",
       "Sharper",
@@ -1297,18 +2352,38 @@
     "month": ""
   },
   {
-    "id": "a2dccce7-046e-4be6-94cb-2fea275bf265",
+    "id": "5ea4e7c9-9f7b-4f33-8ac2-d4ce08ebd6f6",
     "reference": "2- Deuteronomy 7:9 \u201cHe is God \u2026 who keeps covenant\u201d",
-    "question": "How many nations the Lord cast aside for his children to occupy the promised land? The Lord thy God hath chosen thee to be a ____ people unto himself, above all people that are upon the face of the earth To how many generations does God keep his covenant and mercy for those who are faithful to him?",
+    "question": "How many nations the Lord cast aside for his children to occupy the promised land?",
     "options": [
       "3",
       "4",
       "7",
-      "5",
+      "5"
+    ],
+    "answer": "7",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2787876f-9893-4e53-938e-1f4310c6c2e6",
+    "reference": "2- Deuteronomy 7:9 \u201cHe is God \u2026 who keeps covenant\u201d",
+    "question": "The Lord thy God hath chosen thee to be a ____ people unto himself, above all people that are upon the face of the earth",
+    "options": [
       "Great",
       "Special",
       "Relevant",
-      "Faithful",
+      "Faithful"
+    ],
+    "answer": "Special",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "7858e9eb-c509-4c16-903a-5b07e51b2089",
+    "reference": "3- 1 John 2:1 \u201cWe have an Advocate with the Father\u201d",
+    "question": "To how many generations does God keep his covenant and mercy for those who are faithful to him?",
+    "options": [
       "Three generations",
       "Forty generations",
       "Seven generations",
@@ -1319,14 +2394,24 @@
     "month": ""
   },
   {
-    "id": "668c05be-6f23-40b0-85e3-4d040e9b227b",
+    "id": "1ff0026f-0b06-47fa-95da-450c8f7e7fee",
     "reference": "3- 1 John 2:1 \u201cWe have an Advocate with the Father\u201d",
-    "question": "My little children, these things write I unto you, that ye ____ not. He that saith, I know him, and keepeth not his commandments, is a ____, and the truth is not in him.",
+    "question": "My little children, these things write I unto you, that ye ____ not.",
     "options": [
       "Cry",
       "Forgive",
       "Swear",
-      "Sin",
+      "Sin"
+    ],
+    "answer": "Sin",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "65863a1a-ff9a-4f4a-b970-b1f63962cb44",
+    "reference": "4- Revelation 19:7 \u201cThe marriage of the Lamb [Christ]\u201d",
+    "question": "He that saith, I know him, and keepeth not his commandments, is a ____, and the truth is not in him.",
+    "options": [
       "Faithless",
       "Liar",
       "Fool",
@@ -1337,18 +2422,38 @@
     "month": ""
   },
   {
-    "id": "40b4ae7d-5781-45aa-bacd-06f2d2b1a33e",
+    "id": "0c18434c-340b-4803-b160-919a197c09d6",
     "reference": "4- Revelation 19:7 \u201cThe marriage of the Lamb [Christ]\u201d",
-    "question": "For true and righteous are his ____: for he hath judged the great whore, which did corrupt the earth with her fornication, and hath avenged the blood of his servants at her hand. Blessed are they which are ___ unto the marriage supper of the Lamb. And the four and twenty elders and the four beasts fell down and ____ God that sat on the throne",
+    "question": "For true and righteous are his ____: for he hath judged the great whore, which did corrupt the earth with her fornication, and hath avenged the blood of his servants at her hand.",
     "options": [
       "Teachings",
       "Ways",
       "Judgments",
-      "Laws",
+      "Laws"
+    ],
+    "answer": "Judgments",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "57a9812f-b3bf-4c20-8d61-67f21a8b007d",
+    "reference": "4- Revelation 19:7 \u201cThe marriage of the Lamb [Christ]\u201d",
+    "question": "Blessed are they which are ___ unto the marriage supper of the Lamb.",
+    "options": [
       "Called",
       "Contemplating",
       "Praying",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Called",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "14a1cea6-fb41-45f4-b81b-1968f615c530",
+    "reference": "5- Revelation 19:16 Christ the \u201cKING OF KINGS AND LORD OF LORDS\u201d",
+    "question": "And the four and twenty elders and the four beasts fell down and ____ God that sat on the throne",
+    "options": [
       "Sing",
       "Praying to",
       "Worshipped",
@@ -1359,18 +2464,38 @@
     "month": ""
   },
   {
-    "id": "cd33d93e-a9c2-4512-be72-50e1ab009a46",
+    "id": "d4f21549-1f3c-408c-bbef-3b6163bd1427",
     "reference": "5- Revelation 19:16 Christ the \u201cKING OF KINGS AND LORD OF LORDS\u201d",
-    "question": "How is him that sat on the white horse called? And he was clothed with a vesture dipped in blood: and his name is called _____. What happened to the beast and false prophet?",
+    "question": "How is him that sat on the white horse called?",
     "options": [
       "Faithful",
       "True",
       "Redeemer",
-      "a & b",
+      "a & b"
+    ],
+    "answer": "a & b",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b759a69f-c79a-4cb8-a684-c582394e9f69",
+    "reference": "5- Revelation 19:16 Christ the \u201cKING OF KINGS AND LORD OF LORDS\u201d",
+    "question": "And he was clothed with a vesture dipped in blood: and his name is called _____.",
+    "options": [
       "The Word of God",
       "Jesus",
       "King of Glory",
-      "Savior",
+      "Savior"
+    ],
+    "answer": "The Word of God",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a110d943-6762-44b1-ba46-744ebf0295d4",
+    "reference": "6- Genesis 28:12-17 Jacob\u2019s Ladder",
+    "question": "What happened to the beast and false prophet?",
+    "options": [
       "They were cast alive into the a lake of fire",
       "They were imprisoned",
       "They were redeemed",
@@ -1381,18 +2506,38 @@
     "month": ""
   },
   {
-    "id": "52cbccd4-e9c7-469b-b494-61552235c9b4",
+    "id": "8c6321ea-3d29-4730-abf6-2d91c9b86355",
     "reference": "6- Genesis 28:12-17 Jacob\u2019s Ladder",
-    "question": "And give thee the ____ of Abraham, to thee, and to thy seed with thee; that thou mayest inherit the land wherein thou art a stranger, which God gave unto Abraham Who stood above the ladder? And thy seed shall be as _____ of the earth, and thou shalt spread abroad to the west, and the east, and to the north, and to the south",
+    "question": "And give thee the ____ of Abraham, to thee, and to thy seed with thee; that thou mayest inherit the land wherein thou art a stranger, which God gave unto Abraham",
     "options": [
       "Possession",
       "Children",
       "Blessing",
-      "Descendants",
+      "Descendants"
+    ],
+    "answer": "Blessing",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a7d8f40c-3a78-41b3-8454-e3c7ff04e709",
+    "reference": "6- Genesis 28:12-17 Jacob\u2019s Ladder",
+    "question": "Who stood above the ladder?",
+    "options": [
       "Abraham",
       "Jacob",
       "Isaac",
-      "The Lord",
+      "The Lord"
+    ],
+    "answer": "The Lord",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "93830d65-a075-4733-97a9-5cc46b47dd73",
+    "reference": "7- Genesis 31:49 \u201cMay the LORD watch between you and me\u201d",
+    "question": "And thy seed shall be as _____ of the earth, and thou shalt spread abroad to the west, and the east, and to the north, and to the south",
+    "options": [
       "Beautiful",
       "Gracious",
       "The dust",
@@ -1403,18 +2548,38 @@
     "month": ""
   },
   {
-    "id": "6f95ad1e-5153-4cf3-81ea-ccc5e8daea0a",
+    "id": "f31e98f3-bcdc-4bd8-a164-719067a63123",
     "reference": "7- Genesis 31:49 \u201cMay the LORD watch between you and me\u201d",
-    "question": "God hath seen mine affliction and the labor of my hands, and ____ thee yesternight. How did Jacob called the place where he made a covenant with Laban? Who Did Laban say was his witness in the covenant he made with Jacob?",
+    "question": "God hath seen mine affliction and the labor of my hands, and ____ thee yesternight.",
     "options": [
       "Bless",
       "Protect",
       "Shame",
-      "Rebuked",
+      "Rebuked"
+    ],
+    "answer": "Rebuked",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "eb274ce3-adc1-40ef-85a9-1650aef7067b",
+    "reference": "7- Genesis 31:49 \u201cMay the LORD watch between you and me\u201d",
+    "question": "How did Jacob called the place where he made a covenant with Laban?",
+    "options": [
       "Jegarsahadutha",
       "Syrian",
       "Galeed",
-      "Gilead",
+      "Gilead"
+    ],
+    "answer": "Galeed",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "531d8cfd-54ab-4468-a4aa-b71b3362ffd6",
+    "reference": "8- Genesis 35:10 God Will Give You a New Name",
+    "question": "Who Did Laban say was his witness in the covenant he made with Jacob?",
+    "options": [
       "His daughters",
       "God",
       "Abraham",
@@ -1425,41 +2590,80 @@
     "month": ""
   },
   {
-    "id": "7a4372e1-d766-4855-99a2-326a92f37aaa",
+    "id": "a1fe90af-4caf-4a5c-9794-a63cc72fb6e5",
     "reference": "8- Genesis 35:10 God Will Give You a New Name",
-    "question": "What was the altar that Jacob built in Luz called? Thy name is Jacob: thy name shall not be called any more Jacob, but ____ shall be thy name What did Jacob called the place where God spoke to him? What name did Jacob give his son born in Ephrath, which is Bethlehem?",
+    "question": "What was the altar that Jacob built in Luz called?",
     "options": [
       "Bethel",
       "ElLuz",
       "Elbethel",
-      "None of the above",
-      "Israel",
-      "Justice",
-      "John",
-      "Matthew",
-      "Canaan",
-      "Israel",
-      "Luz",
-      "Bethel",
-      "Jacob Jr",
-      "Joseph",
-      "David",
-      "Benoni",
-      "Benjamin"
+      "None of the above"
     ],
-    "answer": "Benjamin",
+    "answer": "Elbethel",
     "quarter": "Q4",
     "month": ""
   },
   {
-    "id": "8d66df3e-1205-4363-bb93-85634d25bc96",
+    "id": "30266471-6c83-4334-9906-acce6b9d23bf",
+    "reference": "8- Genesis 35:10 God Will Give You a New Name",
+    "question": "Thy name is Jacob: thy name shall not be called any more Jacob, but ____ shall be thy name",
+    "options": [
+      "Israel",
+      "Justice",
+      "John",
+      "Matthew"
+    ],
+    "answer": "Israel",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "ed30fca9-b387-453e-8066-5d6265e58ee7",
+    "reference": "8- Genesis 35:10 God Will Give You a New Name",
+    "question": "What did Jacob called the place where God spoke to him?",
+    "options": [
+      "Canaan",
+      "Israel",
+      "Luz",
+      "Bethel"
+    ],
+    "answer": "Bethel",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e6aae547-bb81-4a50-8dce-6a21619f07de",
+    "reference": "8- Genesis 35:10 God Will Give You a New Name",
+    "question": "What name did Jacob give his son born in Ephrath, which is Bethlehem?",
+    "options": [
+      "Jacob Jr",
+      "Joseph",
+      "David",
+      "Benoni"
+    ],
+    "answer": "",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "000bee0c-14b6-4bb2-9f3a-effff05919d9",
     "reference": "9- Psalm 145:17 \u201cThe LORD is righteous in all His ways\u201d",
-    "question": "All thy works shall ___ thee, O LORD; and thy saints shall bless thee. Thy kingdom is an ____ kingdom, and thy dominion endureth throughout all generations.",
+    "question": "All thy works shall ___ thee, O LORD; and thy saints shall bless thee.",
     "options": [
       "Seek",
       "Worship",
       "Praise",
-      "Obey",
+      "Obey"
+    ],
+    "answer": "Praise",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b14f54f5-4d3d-4396-86f4-f741ef2b6250",
+    "reference": "10- Hebrews 10:38 \u201cIf anyone draws back, my soul has no pleasure in him\u201d",
+    "question": "Thy kingdom is an ____ kingdom, and thy dominion endureth throughout all generations.",
+    "options": [
       "Awesome",
       "Unreal",
       "Unseen",
@@ -1470,18 +2674,38 @@
     "month": ""
   },
   {
-    "id": "41b8d927-59d7-4733-ab62-4939b0b3d5b7",
+    "id": "0f5ac960-a8eb-469f-9afb-a4bf2d7e57d3",
     "reference": "10- Hebrews 10:38 \u201cIf anyone draws back, my soul has no pleasure in him\u201d",
-    "question": "What is needed to receive the promise of God? What happens if we willfully sin after receiving the knowledge of the truth? Can the blood of bulls and of goats take away sins?",
+    "question": "What is needed to receive the promise of God?",
     "options": [
       "Faithfulness",
       "Determination",
       "Patience",
-      "Love",
+      "Love"
+    ],
+    "answer": "Patience",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e20a3ef9-90d2-47ec-980e-5a9179b41dad",
+    "reference": "10- Hebrews 10:38 \u201cIf anyone draws back, my soul has no pleasure in him\u201d",
+    "question": "What happens if we willfully sin after receiving the knowledge of the truth?",
+    "options": [
       "We are sent into the lake of fire",
       "We are forgiven",
       "There remains no more sacrifice for sins",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "There remains no more sacrifice for sins",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "fc2ba486-d5d7-4c18-b652-7b3b0f8d80c0",
+    "reference": "11- Job 1:21 \u201cThe LORD gave and the LORD has taken away; blessed be the name of the LORD\u201d",
+    "question": "Can the blood of bulls and of goats take away sins?",
+    "options": [
       "In some countries",
       "Sometimes",
       "No",
@@ -1492,18 +2716,38 @@
     "month": ""
   },
   {
-    "id": "48aeca68-8530-44e5-9039-efae9e926855",
+    "id": "5234be51-7fce-4d14-a077-34df006a2173",
     "reference": "11- Job 1:21 \u201cThe LORD gave and the LORD has taken away; blessed be the name of the LORD\u201d",
-    "question": "How many children did Job have? Now there was a day when the sons of God came to present themselves before the LORD, and ___ came also among them. What did Satan say the reason Job fear God was?",
+    "question": "How many children did Job have?",
     "options": [
       "4",
       "12",
       "7",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "7",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "9ccc56e2-b06c-48e1-94cf-530c98e2cba6",
+    "reference": "11- Job 1:21 \u201cThe LORD gave and the LORD has taken away; blessed be the name of the LORD\u201d",
+    "question": "Now there was a day when the sons of God came to present themselves before the LORD, and ___ came also among them.",
+    "options": [
       "Unbelievers",
       "Job",
       "Satan",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Satan",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e292d497-e3e8-4581-aba5-fbd91b3acdf9",
+    "reference": "12- 1 Corinthians 1:9 \u201cGod is faithful\u201d",
+    "question": "What did Satan say the reason Job fear God was?",
+    "options": [
       "Job wasn't truthful",
       "Job had never known hardship",
       "Job had been blessed by God",
@@ -1514,18 +2758,38 @@
     "month": ""
   },
   {
-    "id": "0a7ac559-0cf9-4813-8d41-398bf7366a84",
+    "id": "528bde1a-1b55-41ee-83aa-3f4e735329cb",
     "reference": "12- 1 Corinthians 1:9 \u201cGod is faithful\u201d",
-    "question": "Who is the author of 1 Corinthians? Grace be unto ___, and peace, from God our Father, and from the Lord Jesus Christ. What was Paul called for?",
+    "question": "Who is the author of 1 Corinthians?",
     "options": [
       "John",
       "Jeremiah",
       "Paul",
-      "Jesus",
+      "Jesus"
+    ],
+    "answer": "Paul",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "aa6da7e5-8a2f-4e5a-afb0-36cb86a26567",
+    "reference": "12- 1 Corinthians 1:9 \u201cGod is faithful\u201d",
+    "question": "Grace be unto ___, and peace, from God our Father, and from the Lord Jesus Christ.",
+    "options": [
       "All",
       "Believers",
       "You",
-      "The king",
+      "The king"
+    ],
+    "answer": "You",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "71934c7d-b36d-42f3-84e3-bf09ce01cc34",
+    "reference": "13- Mark 9:23 \u201cAll things are possible to him who believes\u201d",
+    "question": "What was Paul called for?",
+    "options": [
       "To baptize",
       "To judge",
       "To preach the gospel",
@@ -1536,18 +2800,38 @@
     "month": ""
   },
   {
-    "id": "48d1ffb2-8e92-40e1-a6ce-3998ec32cf33",
+    "id": "df520434-5f5c-4f2d-930c-e66b3d28614f",
     "reference": "13- Mark 9:23 \u201cAll things are possible to him who believes\u201d",
-    "question": "Who did Jesus take with him into a high mountain? And there appeared unto them Elias with Moses: and they were ____ with Jesus. When Jesus saw that the people came running together, he ____ the foul spirit",
+    "question": "Who did Jesus take with him into a high mountain?",
     "options": [
       "John",
       "Peter",
       "James",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "96780d87-4474-4209-ae3e-41ccdba07351",
+    "reference": "13- Mark 9:23 \u201cAll things are possible to him who believes\u201d",
+    "question": "And there appeared unto them Elias with Moses: and they were ____ with Jesus.",
+    "options": [
       "Praying",
       "Talking",
       "a & b",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Talking",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "64f9ecce-16a4-4dba-9cdf-798fdaf8dcc0",
+    "reference": "14- Psalm 100:5 \u201cHis truth endures to all generations\u201d",
+    "question": "When Jesus saw that the people came running together, he ____ the foul spirit",
+    "options": [
       "Rebuked",
       "Renounced",
       "Screamed at",
@@ -1558,18 +2842,38 @@
     "month": ""
   },
   {
-    "id": "f8512b91-cc54-4da7-857c-57d15864be62",
+    "id": "4ef22edd-c33b-4e92-9ed3-6b73208bef88",
     "reference": "14- Psalm 100:5 \u201cHis truth endures to all generations\u201d",
-    "question": "Make a ___ noise unto the Lord, all ye lands. It is he that hath ____ us, and not we ourselves; we are his people, and the sheep of his pasture. Enter into his gates with ___, and into his courts with praise.",
+    "question": "Make a ___ noise unto the Lord, all ye lands.",
     "options": [
       "Joyful",
       "Good",
       "Prayerful",
-      "Responsible",
+      "Responsible"
+    ],
+    "answer": "Joyful",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "935198ff-c38e-41de-be64-7fec153871ce",
+    "reference": "14- Psalm 100:5 \u201cHis truth endures to all generations\u201d",
+    "question": "It is he that hath ____ us, and not we ourselves; we are his people, and the sheep of his pasture.",
+    "options": [
       "Made",
       "Redeemed",
       "Gratified",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Made",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "177ece43-9ee2-4194-8b4a-aaf662800b86",
+    "reference": "15- Psalm 75:6-7 Promotion Comes from the LORD",
+    "question": "Enter into his gates with ___, and into his courts with praise.",
+    "options": [
       "Righteousness",
       "Peace",
       "Thanksgiving",
@@ -1580,14 +2884,24 @@
     "month": ""
   },
   {
-    "id": "91d6d592-bcf3-4d14-b905-d8b09946da0e",
+    "id": "8aaa14c0-2a5c-4376-bcd4-b32808d557af",
     "reference": "15- Psalm 75:6-7 Promotion Comes from the LORD",
-    "question": "All the horns of the wicked also will I ___; but the horns of the righteous shall be exalted. Who is the judge?",
+    "question": "All the horns of the wicked also will I ___; but the horns of the righteous shall be exalted.",
     "options": [
       "Ignore",
       "Bless",
       "Cut off",
-      "Rebuke",
+      "Rebuke"
+    ],
+    "answer": "Cut off",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a2e49eca-135d-4971-8a40-79fd2f59a147",
+    "reference": "16- John 10:11 \u201cI am the good shepherd\u201d",
+    "question": "Who is the judge?",
+    "options": [
       "The lawyer",
       "Jesus",
       "The holy spirit",
@@ -1598,18 +2912,38 @@
     "month": ""
   },
   {
-    "id": "e4ae59ca-b0ca-417e-8555-0872d84ccc48",
+    "id": "9f8ed612-11d2-44b4-b7ff-016d8ed3ff2d",
     "reference": "16- John 10:11 \u201cI am the good shepherd\u201d",
-    "question": "Verily, verily, I say unto you, I am the ___ of the sheep. Which of these Jesus came for? I am the good ___, and know my sheep, and am known of mine.",
+    "question": "Verily, verily, I say unto you, I am the ___ of the sheep.",
     "options": [
       "Sanctified",
       "Crucified",
       "Door",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Door",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "43329233-53b6-40e3-adf9-f74f70007d15",
+    "reference": "16- John 10:11 \u201cI am the good shepherd\u201d",
+    "question": "Which of these Jesus came for?",
+    "options": [
       "Steal",
       "Destroy",
       "Give life",
-      "Kill",
+      "Kill"
+    ],
+    "answer": "Give life",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "8148ebdb-5c79-4b48-a9f5-b780d47a12f2",
+    "reference": "17- John 7:37 \u201cIf anyone thirsts, let him come to me and drink\u201d",
+    "question": "I am the good ___, and know my sheep, and am known of mine.",
+    "options": [
       "Savior",
       "Teacher",
       "Lover",
@@ -1620,14 +2954,24 @@
     "month": ""
   },
   {
-    "id": "873dbf94-a668-4fd1-9a06-ac8f2d308455",
+    "id": "c3447621-09cf-47b5-a695-c96473d32bc0",
     "reference": "17- John 7:37 \u201cIf anyone thirsts, let him come to me and drink\u201d",
-    "question": "As ____ children, not fashioning yourself according to the former lusts in your ignorance Forasmuch as ye know that ye were not _____ with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers",
+    "question": "As ____ children, not fashioning yourself according to the former lusts in your ignorance",
     "options": [
       "Kind",
       "Obedient",
       "Vulnerable",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Obedient",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "c3f8d453-9734-4fdc-aa1f-c6ee52b50f5d",
+    "reference": "18- 1 Corinthians 13:6-7 \u201c[Love] bears all things\u201d",
+    "question": "Forasmuch as ye know that ye were not _____ with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers",
+    "options": [
       "Saved",
       "Blessed",
       "Rescued",
@@ -1638,18 +2982,38 @@
     "month": ""
   },
   {
-    "id": "f3a19cab-e89c-454c-95bf-4bacc4b25f4a",
+    "id": "ce761d5b-917a-4a44-8720-a88909fde7d8",
     "reference": "18- 1 Corinthians 13:6-7 \u201c[Love] bears all things\u201d",
-    "question": "Likewise, ye younger, ____ yourself unto the elder. Who act like a roaring lion? ______ the flock of God which is among you, taking the oversight thereof, not by constraint, ...",
+    "question": "Likewise, ye younger, ____ yourself unto the elder.",
     "options": [
       "Submit",
       "Cry",
       "Lean",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Submit",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "139bb974-2cad-4609-aded-cb5cd890031c",
+    "reference": "18- 1 Corinthians 13:6-7 \u201c[Love] bears all things\u201d",
+    "question": "Who act like a roaring lion?",
+    "options": [
       "Nothing",
       "God",
       "A fool",
-      "The devil",
+      "The devil"
+    ],
+    "answer": "The devil",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "33770258-4131-40bb-b1af-5284477b4681",
+    "reference": "19- 1 Corinthians 6:19-20 \u201cYour body is the temple of the Holy Spirit\u201d",
+    "question": "______ the flock of God which is among you, taking the oversight thereof, not by constraint, ...",
+    "options": [
       "Feed",
       "Take care of",
       "Support",
@@ -1660,18 +3024,38 @@
     "month": ""
   },
   {
-    "id": "72d08d9a-d8f9-430f-a737-692c9915338e",
+    "id": "4f73f129-03ed-439b-b8c9-7ae203cedd22",
     "reference": "19- 1 Corinthians 6:19-20 \u201cYour body is the temple of the Holy Spirit\u201d",
-    "question": "If any man boast not to never have sinned, what he is? And these things write we unto you, that your ____ may be full. According to 1 John 1, who is God?",
+    "question": "If any man boast not to never have sinned, what he is?",
     "options": [
       "A true believer",
       "A liar",
       "A hypocrite",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "A liar",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "312f2211-dbf3-4426-950d-4922eb17adcd",
+    "reference": "19- 1 Corinthians 6:19-20 \u201cYour body is the temple of the Holy Spirit\u201d",
+    "question": "And these things write we unto you, that your ____ may be full.",
+    "options": [
       "Joy",
       "Righteousness",
       "Holiness",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Joy",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "2859f9e0-af95-4633-bc8d-7eea489666e9",
+    "reference": "20- Psalm 25:7-8 \u201cGood and upright is the LORD; He teaches sinners in the way\u201d",
+    "question": "According to 1 John 1, who is God?",
+    "options": [
       "The creator",
       "The king",
       "The father",
@@ -1682,18 +3066,38 @@
     "month": ""
   },
   {
-    "id": "ed987f09-2b5b-4bff-aed4-264ef3db7ed5",
+    "id": "fe9c6ad9-b502-4be4-9dd9-31f83c558190",
     "reference": "20- Psalm 25:7-8 \u201cGood and upright is the LORD; He teaches sinners in the way\u201d",
-    "question": "What is Paul heart's desire and prayer for Israel? According to Paul how can one be saved? What happens to anyone who call on the name of the Lord?",
+    "question": "What is Paul heart's desire and prayer for Israel?",
     "options": [
       "That they might repent",
       "That they might know peace",
       "That they might be saved",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "That they might be saved",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "c134cd39-8e5f-4b86-8c66-36fd1e6d86fc",
+    "reference": "20- Psalm 25:7-8 \u201cGood and upright is the LORD; He teaches sinners in the way\u201d",
+    "question": "According to Paul how can one be saved?",
+    "options": [
       "Confess with thy mouth",
       "Believe in thine heart that God raised Jesus from the dead",
       "a & b",
-      "Be faithful",
+      "Be faithful"
+    ],
+    "answer": "a & b",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "ac7227ad-d384-4f46-80af-1e7d4672ecaf",
+    "reference": "21- Proverbs 22:6 \u201cTrain up a child in the way he should go\u201d",
+    "question": "What happens to anyone who call on the name of the Lord?",
+    "options": [
       "They shall be blessed",
       "They shall never see death",
       "They shall be friends of Jesus",
@@ -1704,18 +3108,38 @@
     "month": ""
   },
   {
-    "id": "07003972-330a-420c-8754-f44cdc19edd7",
+    "id": "53a9d9e9-bedb-477f-8659-aafd62da6f66",
     "reference": "21- Proverbs 22:6 \u201cTrain up a child in the way he should go\u201d",
-    "question": "For there is no _____ between the Jew and the Greek How are the feet of them that preach the gospel? How does faith come?",
+    "question": "For there is no _____ between the Jew and the Greek",
     "options": [
       "Difference",
       "Similarity",
       "Love",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Difference",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "713b6120-789b-47d9-a148-b5d2035e1ad5",
+    "reference": "21- Proverbs 22:6 \u201cTrain up a child in the way he should go\u201d",
+    "question": "How are the feet of them that preach the gospel?",
+    "options": [
       "Bless",
       "Shining",
       "Gracious",
-      "Beautiful",
+      "Beautiful"
+    ],
+    "answer": "Beautiful",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "513024bf-cd53-42bb-9c51-b05319458414",
+    "reference": "22- James 3:17 \u201cThe wisdom that is from above is first pure\u201d",
+    "question": "How does faith come?",
+    "options": [
       "By hearing the word of God",
       "At birth",
       "It is a gift",
@@ -1726,18 +3150,38 @@
     "month": ""
   },
   {
-    "id": "e918699e-28ef-4d35-9481-fdc8345f212a",
+    "id": "8a8ddc33-2a45-4620-9662-60122a4e55a4",
     "reference": "22- James 3:17 \u201cThe wisdom that is from above is first pure\u201d",
-    "question": "According to Hebrews 4, does God continue to work? When did God rest? Can anything be hidden from God?",
+    "question": "According to Hebrews 4, does God continue to work?",
     "options": [
       "Sometimes",
       "He always resting",
       "Works were finished from the foundation of the world",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Works were finished from the foundation of the world",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b750f8bc-6fad-4a71-ad44-dd91fdfcecd8",
+    "reference": "22- James 3:17 \u201cThe wisdom that is from above is first pure\u201d",
+    "question": "When did God rest?",
+    "options": [
       "Never",
       "On the third day",
       "On the seventh day",
-      "In the winter",
+      "In the winter"
+    ],
+    "answer": "On the seventh day",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "87dbb083-377b-4381-af94-93ef2a7d9f8a",
+    "reference": "23- Psalm 118:8-9 \u201cIt is better to trust in the LORD than to put confidence in man\u201d",
+    "question": "Can anything be hidden from God?",
+    "options": [
       "Our secrets",
       "Our sins",
       "Nothing",
@@ -1748,14 +3192,24 @@
     "month": ""
   },
   {
-    "id": "7ad7ed4a-732f-4209-a59e-3ceef023ab01",
+    "id": "fa025493-1b03-44a2-a76c-96087be3ff41",
     "reference": "23- Psalm 118:8-9 \u201cIt is better to trust in the LORD than to put confidence in man\u201d",
-    "question": "How are we justified? God commendeth his love toward us, in that, while were yet ____, Christ died for us.",
+    "question": "How are we justified?",
     "options": [
       "By faith",
       "Through grace",
       "Through eternal sacrifice",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "By faith",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "51345a5f-cffa-4bc3-b7fb-11ff0d1a0852",
+    "reference": "24- Psalm 34:8 \u201cBlessed is the man who trusts in Him\u201d",
+    "question": "God commendeth his love toward us, in that, while were yet ____, Christ died for us.",
+    "options": [
       "Children",
       "Singles",
       "Sinners",
@@ -1766,14 +3220,24 @@
     "month": ""
   },
   {
-    "id": "b93e9e85-1037-4c45-801a-2b45c16ef66e",
+    "id": "c1d122a3-5b95-4119-9edc-20e70a1cfdd6",
     "reference": "24- Psalm 34:8 \u201cBlessed is the man who trusts in Him\u201d",
-    "question": "For if, when we were ___, we were reconciled to God by the death of his Son And not only so, but we ___ in tribulations also: knowing that tribulation worketh patience",
+    "question": "For if, when we were ___, we were reconciled to God by the death of his Son",
     "options": [
       "Enemies",
       "Children",
       "Orphans",
-      "All of the above",
+      "All of the above"
+    ],
+    "answer": "Enemies",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "54a23c7e-292c-48d9-a8eb-93fbd24e8973",
+    "reference": "25- Proverbs 15:3 \u201cThe eyes of the LORD are in every place\u201d",
+    "question": "And not only so, but we ___ in tribulations also: knowing that tribulation worketh patience",
+    "options": [
       "Glory",
       "Cry",
       "Grow",
@@ -1784,18 +3248,38 @@
     "month": ""
   },
   {
-    "id": "a9c96ee7-6550-45a4-afc2-8adc30d6d384",
+    "id": "6b168aed-2ddb-44cb-92e2-e3d3ec807c36",
     "reference": "25- Proverbs 15:3 \u201cThe eyes of the LORD are in every place\u201d",
-    "question": "What did the Lord do when the children of Israel cried unto him? For he hath _____ the gates of brass, and cut the bars of iron in sunder Oh that men would ___ the Lord for his goodness, and for his wonderful works to the children of men!",
+    "question": "What did the Lord do when the children of Israel cried unto him?",
     "options": [
       "He rebuked them",
       "He forgave them",
       "He delivered them",
-      "He did nothing",
+      "He did nothing"
+    ],
+    "answer": "He delivered them",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "b183d914-fd3f-46a9-a6eb-7cf7e55b5ea5",
+    "reference": "25- Proverbs 15:3 \u201cThe eyes of the LORD are in every place\u201d",
+    "question": "For he hath _____ the gates of brass, and cut the bars of iron in sunder",
+    "options": [
       "Closed",
       "Opened",
       "Highlighted",
-      "Broken",
+      "Broken"
+    ],
+    "answer": "Broken",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "05647656-b13d-4b48-93d6-3c5512d2c14b",
+    "reference": "26- Numbers 23:19 \u201cGod is not a man that He should lie\u201d",
+    "question": "Oh that men would ___ the Lord for his goodness, and for his wonderful works to the children of men!",
+    "options": [
       "Seek",
       "Sing to",
       "Cry to",
@@ -1806,18 +3290,38 @@
     "month": ""
   },
   {
-    "id": "5fb3d95c-ca93-42f8-966a-c117ff0003fc",
+    "id": "504f7d31-6e12-4fee-b0a2-1850f85a9357",
     "reference": "26- Numbers 23:19 \u201cGod is not a man that He should lie\u201d",
-    "question": "Can anyone born of God commit sin? How should children of God love? Beloved, if our heart ____ us not, then have we confidence toward God",
+    "question": "Can anyone born of God commit sin?",
     "options": [
       "Absolutely",
       "Always",
       "No",
-      "Sometimes",
+      "Sometimes"
+    ],
+    "answer": "No",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "74e4cabb-bdc6-44a4-9b9d-c48e46f774a9",
+    "reference": "26- Numbers 23:19 \u201cGod is not a man that He should lie\u201d",
+    "question": "How should children of God love?",
+    "options": [
       "Using nice words",
       "In deed",
       "In truth",
-      "b & c",
+      "b & c"
+    ],
+    "answer": "b & c",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "440b3610-7bc5-40b2-8d15-8c7a10cf52fe",
+    "reference": "27- Acts 17:28 \u201cIn Him we live and move and have our being\u201d",
+    "question": "Beloved, if our heart ____ us not, then have we confidence toward God",
+    "options": [
       "Trick",
       "Condemn",
       "Survive",
@@ -1828,18 +3332,38 @@
     "month": ""
   },
   {
-    "id": "2ba47267-314b-499f-952d-e710996522d8",
+    "id": "772b9853-5e71-475d-8db2-9e2d62345f20",
     "reference": "27- Acts 17:28 \u201cIn Him we live and move and have our being\u201d",
-    "question": "Who is Jude's brother? How many saints did Enoch prophesy the Lord would come with? Keep yourselves in the ____ of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
+    "question": "Who is Jude's brother?",
     "options": [
       "Peter",
       "Paul",
       "John",
-      "James",
+      "James"
+    ],
+    "answer": "James",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "f2ad2ccb-abcd-4b44-8336-9f1a2ae4000e",
+    "reference": "27- Acts 17:28 \u201cIn Him we live and move and have our being\u201d",
+    "question": "How many saints did Enoch prophesy the Lord would come with?",
+    "options": [
       "One hundred",
       "Seventy",
       "Seventy seven",
-      "Ten thousands",
+      "Ten thousands"
+    ],
+    "answer": "Ten thousands",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "a6c18bdd-35c8-42c7-b532-0d10bbc2ba67",
+    "reference": "28- Psalm 118:24 \u201cThis is the day the LORD has made\u201d",
+    "question": "Keep yourselves in the ____ of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
+    "options": [
       "Peace",
       "Blessings",
       "Love",
@@ -1850,14 +3374,24 @@
     "month": ""
   },
   {
-    "id": "b6495380-8c56-46ea-bfc3-8c6bd3827a41",
+    "id": "2a1b403a-3918-47aa-af10-17fa3c418cf6",
     "reference": "28- Psalm 118:24 \u201cThis is the day the LORD has made\u201d",
-    "question": "What is the meaning of Alpha and Omega? And from Jesus Christ, who is the ____ witness, and the first begotten of the dead, and the prince of the kings of the earth",
+    "question": "What is the meaning of Alpha and Omega?",
     "options": [
       "The only and true God",
       "The creator and mediator",
       "The beginning and the ending",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "The beginning and the ending",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "d2ca3fb2-dfa4-4041-87e0-44263a497ad0",
+    "reference": "29- Matthew 28:19 \u201cGo therefore and make disciples\u201d",
+    "question": "And from Jesus Christ, who is the ____ witness, and the first begotten of the dead, and the prince of the kings of the earth",
+    "options": [
       "Only",
       "Great",
       "Faithful",
@@ -1868,14 +3402,24 @@
     "month": ""
   },
   {
-    "id": "0d9c67f0-a601-4660-b0d4-3c29cbff3c63",
+    "id": "898a6f23-1d43-46cf-9c00-8d1a03b9ef5a",
     "reference": "29- Matthew 28:19 \u201cGo therefore and make disciples\u201d",
-    "question": "___ the things which thou hast seen, and the things which are, and the things which shall be hereafter To him that ____ will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne",
+    "question": "___ the things which thou hast seen, and the things which are, and the things which shall be hereafter",
     "options": [
       "Study",
       "Write",
       "Meditate on",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Write",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "4a1abba4-5bf4-4e3d-a346-210ec7912be7",
+    "reference": "30- Deuteronomy 20:3-4 \u201cGod \u2026 goes with you to fight for you\u201d",
+    "question": "To him that ____ will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne",
+    "options": [
       "Is faithful",
       "Is good",
       "Pray",
@@ -1886,14 +3430,24 @@
     "month": ""
   },
   {
-    "id": "30eed86a-eeb1-4fea-ba90-8ccf9d6b1531",
+    "id": "923834c5-e08e-42a0-8d14-9c4c2f4fc42b",
     "reference": "30- Deuteronomy 20:3-4 \u201cGod \u2026 goes with you to fight for you\u201d",
-    "question": "The Lord is not ____ concerning his promise, as some men count slackness... But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ",
+    "question": "The Lord is not ____ concerning his promise, as some men count slackness...",
     "options": [
       "Quick",
       "Forgetful",
       "Slack",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Slack",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "e0f32cae-d086-43f8-b16e-a0d0b8fdc477",
+    "reference": "31- Revelation 22:13 \u201cI am the Alpha and the Omega\u201d",
+    "question": "But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ",
+    "options": [
       "Be",
       "Live",
       "Hope",
@@ -1904,14 +3458,24 @@
     "month": ""
   },
   {
-    "id": "bae243a9-a2a5-4230-a5e5-c4ba1121b880",
+    "id": "4e6c4426-7201-457d-ba76-f6e86636cf64",
     "reference": "31- Revelation 22:13 \u201cI am the Alpha and the Omega\u201d",
-    "question": "The Lord is not ____ concerning his promise, as some men count slackness... But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ",
+    "question": "The Lord is not ____ concerning his promise, as some men count slackness...",
     "options": [
       "Quick",
       "Forgetful",
       "Slack",
-      "None of the above",
+      "None of the above"
+    ],
+    "answer": "Slack",
+    "quarter": "Q4",
+    "month": ""
+  },
+  {
+    "id": "50f2a076-1ea0-4f85-92e6-e58e5a5b4935",
+    "reference": "31- Revelation 22:13 \u201cI am the Alpha and the Omega\u201d",
+    "question": "But ____ in grace, and in the knowledge of our Lord and Savior Jesus Christ",
+    "options": [
       "Be",
       "Live",
       "Hope",
