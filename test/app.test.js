@@ -97,4 +97,16 @@ describe('Auth middleware', () => {
     const res = await request(app).get('/api/groups/g1');
     expect(res.statusCode).toEqual(401);
   });
+
+  it('should reject unauthorized mentor record creation', async () => {
+    const res = await request(app)
+      .post('/api/mentors/records')
+      .send({ childId: 'c1', notes: 'hi' });
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized mentor record fetch', async () => {
+    const res = await request(app).get('/api/mentors/c1/records');
+    expect(res.statusCode).toEqual(401);
+  });
 });

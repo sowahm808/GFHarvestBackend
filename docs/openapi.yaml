@@ -217,6 +217,30 @@ paths:
       responses:
         '200':
           description: Array of entries
+  /api/mentors/records:
+    post:
+      summary: Create mentor record
+      description: Mentor role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Record saved
+  /api/mentors/{childId}/records:
+    get:
+      summary: Get mentor records for child
+      description: Parent or mentor role required.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of records
   /api/points/grant:
     post:
       summary: Grant points to child
