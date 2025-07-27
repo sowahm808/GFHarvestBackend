@@ -26,6 +26,9 @@ app.use('/api/mental-status', mentalRoutes);
 app.use('/api/children', childrenRoutes);
 app.use('/api/mentors', mentorsRoutes);
 app.use('/api/mentors', mentorRecordsRoutes);
+// Support legacy singular `/api/mentor` paths used by older clients
+app.use('/api/mentor', mentorsRoutes);
+app.use('/api/mentor', mentorRecordsRoutes);
 app.use('/api/quizzes', quizzesRoutes);
 app.use('/api/bible-questions', bibleQuestionsRoutes);
 app.use('/api/essays', essaysRoutes);
