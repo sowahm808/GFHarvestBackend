@@ -56,3 +56,24 @@ exports.getGroupPoints = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
+exports.listGroupPoints = async (_req, res) => {
+  try {
+    const groupsSnap = await db.collection('groups').get();
+    const results = [];
+
+    for (const doc of groupsSnap.docs) {
+      const { members = [], name } = doc.data();
+      let total = 0;
+      for (const childId of members) {
+        total += await getChildTotal(childId);
+      }
+      results.push({ groupId: doc.id, name, total });
+    }
+
+    res.json(results);
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};

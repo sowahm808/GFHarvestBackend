@@ -312,6 +312,14 @@ paths:
        responses:
         '200':
           description: Child added
+  /api/groups/points:
+    get:
+      summary: List points for all groups
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Array of group point totals
   /api/groups/{groupId}:
     get:
       summary: Get group info
