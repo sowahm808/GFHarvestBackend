@@ -8,7 +8,6 @@ const usersRoutes = require('./routes/users');
 const mentalRoutes = require('./routes/mentalStatus');
 const childrenRoutes = require('./routes/children');
 const mentorsRoutes = require('./routes/mentors');
-const mentorRecordsRoutes = require('./routes/mentorRecords');
 const quizzesRoutes = require('./routes/quizzes');
 const bibleQuestionsRoutes = require('./routes/bibleQuestions');
 const essaysRoutes = require('./routes/essays');
@@ -25,10 +24,8 @@ app.use('/api/users', usersRoutes);
 app.use('/api/mental-status', mentalRoutes);
 app.use('/api/children', childrenRoutes);
 app.use('/api/mentors', mentorsRoutes);
-app.use('/api/mentors', mentorRecordsRoutes);
 // Support legacy singular `/api/mentor` paths used by older clients
 app.use('/api/mentor', mentorsRoutes);
-app.use('/api/mentor', mentorRecordsRoutes);
 app.use('/api/quizzes', quizzesRoutes);
 app.use('/api/bible-questions', bibleQuestionsRoutes);
 app.use('/api/essays', essaysRoutes);
