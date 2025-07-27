@@ -51,6 +51,7 @@ npm test
 - `POST /api/points/grant` – Grant points.
 - `GET  /api/points/:childId` – Get points for a child.
 - `GET  /api/groups/:groupId/points` – Get total points for a group.
+- `GET  /api/groups/points` – Get total points for all groups.
 - `POST /api/groups/create` – Create a group (max 5 members).
 - `POST /api/groups/add-member` – Add a child to a group.
 - `GET  /api/groups/:groupId` – View group info.
