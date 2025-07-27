@@ -35,6 +35,8 @@ npm test
 - `GET  /api/children/:childId` – Get a child's profile and mentors.
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
+- `POST /api/mentors/records` – Create a mentor progress note.
+- `GET  /api/mentors/:childId/records` – Get notes for a child.
 - `GET  /api/quizzes/today` – Get today’s quiz.
 - `POST /api/quizzes/submit` – Submit quiz answers.
 - `GET  /api/quizzes/history/:childId` – Quiz history.
