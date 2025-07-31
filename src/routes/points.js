@@ -5,6 +5,7 @@ const pointsController = require('../controllers/pointsController');
 const router = express.Router();
 
 router.post('/grant', auth, pointsController.grantPoints);
+router.get('/:childId/stream', auth, pointsController.streamChildPoints);
 router.get('/:childId', auth, pointsController.getChildPoints);
 
 module.exports = router;

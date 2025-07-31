@@ -265,6 +265,22 @@ paths:
       responses:
         '200':
           description: Points object
+  /api/points/{childId}/stream:
+    get:
+      summary: Stream points for child
+      description: Server-sent events stream of point totals.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: childId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: SSE stream
+
   /api/groups/create:
     post:
       summary: Create a new group
