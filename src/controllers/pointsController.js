@@ -77,3 +77,34 @@ exports.listGroupPoints = async (_req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
+exports.streamChildPoints = (req, res) => {
+  const { childId } = req.params;
+
+  res.set({
+    'Content-Type': 'text/event-stream',
+    'Cache-Control': 'no-cache',
+    Connection: 'keep-alive',
+  });
+  res.flushHeaders();
+
+  const query = db.collection('points').where('childId', '==', childId);
+  const unsubscribe = query.onSnapshot(
+    async (snap) => {
+      let total = 0;
+      for (const doc of snap.docs) {
+        total += doc.data().amount || 0;
+      }
+      res.write(`data: ${JSON.stringify({ childId, total })}\n\n`);
+    },
+    (error) => {
+      console.error('points stream error', error);
+      res.write(`event: error\ndata: ${error.message}\n\n`);
+    }
+  );
+
+  req.on('close', () => {
+    unsubscribe();
+    res.end();
+  });
+};
