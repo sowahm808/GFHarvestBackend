@@ -2,7 +2,7 @@ const addMock = jest.fn();
 const docGetMock = jest.fn();
 const docUpdateMock = jest.fn();
 
-const firestoreMock = {
+const mockFirestore = {
   collection: jest.fn(() => ({
     add: addMock,
     doc: jest.fn(() => ({ get: docGetMock, update: docUpdateMock })),
@@ -11,7 +11,7 @@ const firestoreMock = {
 };
 
 jest.mock('../src/config/firebase', () => ({
-  firestore: firestoreMock,
+  firestore: mockFirestore,
   admin: {},
 }));
 
@@ -27,23 +27,23 @@ function mockResponse() {
 describe('groupsController.createGroup', () => {
   beforeEach(() => {
     addMock.mockReset();
-    firestoreMock.collection.mockClear();
+    mockFirestore.collection.mockClear();
   });
 
   it('creates a group', async () => {
     addMock.mockResolvedValue({ id: 'g1' });
-    const req = { body: { name: 'Test', members: ['c1'] } };
+    const req = { body: { name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] } };
     const res = mockResponse();
 
     await groupsController.createGroup(req, res);
 
-    expect(addMock).toHaveBeenCalledWith({ name: 'Test', members: ['c1'] });
+    expect(addMock).toHaveBeenCalledWith({ name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] });
     expect(res.status).toHaveBeenCalledWith(201);
-    expect(res.json).toHaveBeenCalledWith({ id: 'g1', name: 'Test', members: ['c1'] });
+    expect(res.json).toHaveBeenCalledWith({ id: 'g1', name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] });
   });
 
   it('rejects when group exceeds max members', async () => {
-    const req = { body: { name: 'Big', members: ['1','2','3','4','5','6'] } };
+    const req = { body: { name: 'Big', type: 'school', ageGroup: '10-12', members: ['1','2','3','4','5','6'] } };
     const res = mockResponse();
 
     await groupsController.createGroup(req, res);
@@ -51,13 +51,23 @@ describe('groupsController.createGroup', () => {
     expect(res.status).toHaveBeenCalledWith(400);
     expect(res.json.mock.calls[0][0].message).toMatch(/max 5 members/);
   });
+
+  it('rejects invalid group type', async () => {
+    const req = { body: { name: 'Test', type: 'invalid', ageGroup: '10-12' } };
+    const res = mockResponse();
+
+    await groupsController.createGroup(req, res);
+
+    expect(res.status).toHaveBeenCalledWith(400);
+    expect(res.json.mock.calls[0][0].message).toMatch(/Valid group type/);
+  });
 });
 
 describe('groupsController.addMember', () => {
   beforeEach(() => {
     docGetMock.mockReset();
     docUpdateMock.mockReset();
-    firestoreMock.collection.mockClear();
+    mockFirestore.collection.mockClear();
   });
 
   it('returns 404 when group missing', async () => {
