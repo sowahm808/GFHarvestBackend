@@ -296,12 +296,19 @@ paths:
               properties:
                 name:
                   type: string
+                type:
+                  type: string
+                  enum: [school, neighbourhood, family, church, random]
+                ageGroup:
+                  type: string
                 members:
                   type: array
                   items:
                     type: string
-                required:
-                  - name
+              required:
+                - name
+                - type
+                - ageGroup
       responses:
         '201':
           description: Group created

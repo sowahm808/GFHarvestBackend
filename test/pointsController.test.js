@@ -1,6 +1,6 @@
 const groupsGetMock = jest.fn();
 const whereMock = jest.fn();
-const firestoreMock = {
+const mockFirestore = {
   collection: jest.fn((name) => {
     if (name === 'groups') {
       return { get: groupsGetMock };
@@ -13,7 +13,7 @@ const firestoreMock = {
 };
 
 jest.mock('../src/config/firebase', () => ({
-  firestore: firestoreMock,
+  firestore: mockFirestore,
   admin: {},
 }));
 
@@ -30,7 +30,7 @@ describe('pointsController.listGroupPoints', () => {
   beforeEach(() => {
     groupsGetMock.mockReset();
     whereMock.mockReset();
-    firestoreMock.collection.mockClear();
+    mockFirestore.collection.mockClear();
   });
 
   it('aggregates totals for all groups', async () => {
