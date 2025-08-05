@@ -2,7 +2,9 @@ const { admin, firestore } = require('../config/firebase');
 const db = firestore;
 
 exports.grantPoints = async (req, res) => {
-  const { childId, amount, activity, fromParent } = req.body;
+  const { childId, activity, fromParent } = req.body;
+  const amount = req.body.amount ?? req.body.points;
+
   try {
     const entry = {
       childId,
@@ -24,14 +26,17 @@ async function getChildTotal(childId) {
     .collection('points')
     .where('childId', '==', childId)
     .get();
-  return snapshot.docs.reduce((sum, d) => sum + (d.data().amount || 0), 0);
+  return snapshot.docs.reduce((sum, d) => {
+    const data = d.data();
+    return sum + (data.amount ?? data.points ?? 0);
+  }, 0);
 }
 
 exports.getChildPoints = async (req, res) => {
   const { childId } = req.params;
   try {
     const total = await getChildTotal(childId);
-    res.json({ childId, total });
+    res.json({ childId, points: total });
   } catch (err) {
     console.error(err);
     res.status(400).json({ message: err.message });
@@ -93,9 +98,10 @@ exports.streamChildPoints = (req, res) => {
     async (snap) => {
       let total = 0;
       for (const doc of snap.docs) {
-        total += doc.data().amount || 0;
+        const data = doc.data();
+        total += data.amount ?? data.points ?? 0;
       }
-      res.write(`data: ${JSON.stringify({ childId, total })}\n\n`);
+      res.write(`data: ${JSON.stringify({ childId, points: total })}\n\n`);
     },
     (error) => {
       console.error('points stream error', error);
