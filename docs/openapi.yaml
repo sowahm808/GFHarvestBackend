@@ -23,6 +23,26 @@ paths:
       description: Parent role required.
       security:
         - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+                name:
+                  type: string
+                age:
+                  type: integer
+              required:
+                - email
+                - password
+                - name
+                - age
       responses:
         '201':
           description: Child created
@@ -217,6 +237,32 @@ paths:
       responses:
         '200':
           description: Array of entries
+  /api/mentors/create:
+    post:
+      summary: Create mentor profile
+      description: Admin role required.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                phone:
+                  type: string
+              required:
+                - name
+                - email
+                - phone
+      responses:
+        '201':
+          description: Mentor created
   /api/mentors/records:
     post:
       summary: Create mentor record

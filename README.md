@@ -26,13 +26,14 @@ npm test
 
 - `POST /api/users/register-parent` – Create a parent account.
 - `POST /api/users/register-admin` – Create an admin account.
-- `POST /api/users/add-child` – Add a child account (parent only).
+- `POST /api/users/add-child` – Add a child account with name and age (parent only).
 - `GET  /api/users/me` – Retrieve the current user's profile.
 - `POST /api/checkins` – Submit a check-in entry.
 - `GET  /api/checkins/:childId` – Get check-ins for a specific child.
 - `POST /api/mental-status` – Submit a mental status entry.
 - `GET  /api/mental-status/:childId` – Get mental status logs for a child.
-- `GET  /api/children/:childId` – Get a child's profile and mentors.
+- `GET  /api/children/:childId` – Get a child's profile, age and mentors.
+- `POST /api/mentors/create` – Add a mentor profile (admin only).
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 - `POST /api/mentors/records` – Create a mentor progress note.
