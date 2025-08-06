@@ -1,6 +1,17 @@
 const { firestore } = require('../config/firebase');
 const db = firestore;
 
+exports.createMentor = async (req, res) => {
+  const { name, email, phone } = req.body;
+  try {
+    const docRef = await db.collection('mentors').add({ name, email, phone });
+    res.status(201).json({ id: docRef.id, name, email, phone });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
+
 exports.assignMentor = async (req, res) => {
   const { mentorId, childId } = req.body;
   try {

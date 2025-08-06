@@ -5,6 +5,11 @@ exports.getChildProfile = async (req, res) => {
   const { childId } = req.params;
   try {
     const userRecord = await admin.auth().getUser(childId);
+    let age;
+    if (db) {
+      const childDoc = await db.collection('children').doc(childId).get();
+      age = childDoc.exists ? childDoc.data().age : undefined;
+    }
     const mentorSnapshot = await db
       .collection('mentorAssignments')
       .where('childId', '==', childId)
@@ -15,6 +20,7 @@ exports.getChildProfile = async (req, res) => {
       uid: userRecord.uid,
       email: userRecord.email,
       displayName: userRecord.displayName,
+      age,
       mentors,
     });
   } catch (err) {
