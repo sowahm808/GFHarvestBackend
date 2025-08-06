@@ -1,10 +1,11 @@
 const mockGetUser = jest.fn();
 const mockChildDocGet = jest.fn();
+const mockChildrenGet = jest.fn();
 const mockChildDoc = jest.fn(() => ({ get: mockChildDocGet }));
 const mockMentorGet = jest.fn().mockResolvedValue({ docs: [] });
 const mockMentorWhere = jest.fn(() => ({ get: mockMentorGet }));
 const mockCollection = jest.fn((name) => {
-  if (name === 'children') return { doc: mockChildDoc };
+  if (name === 'children') return { doc: mockChildDoc, get: mockChildrenGet };
   if (name === 'mentorAssignments') return { where: mockMentorWhere };
   return {};
 });
@@ -27,6 +28,7 @@ describe('childrenController.getChildProfile', () => {
   beforeEach(() => {
     mockGetUser.mockReset();
     mockChildDocGet.mockReset();
+    mockChildrenGet.mockReset();
     mockChildDoc.mockClear();
     mockMentorWhere.mockClear();
     mockMentorGet.mockClear();
@@ -45,5 +47,27 @@ describe('childrenController.getChildProfile', () => {
     expect(mockChildDoc).toHaveBeenCalledWith('c1');
     expect(mockChildDocGet).toHaveBeenCalled();
     expect(res.json).toHaveBeenCalledWith({ uid: 'c1', email: 'c1@example.com', displayName: 'Kid', age: 10, mentors: [] });
+  });
+});
+
+describe('childrenController.listChildren', () => {
+  beforeEach(() => {
+    mockChildrenGet.mockReset();
+    mockCollection.mockClear();
+  });
+
+  it('returns list of children', async () => {
+    mockChildrenGet.mockResolvedValue({
+      docs: [
+        { id: 'c1', data: () => ({ name: 'Kid', age: 10 }) },
+      ],
+    });
+    const req = {};
+    const res = mockResponse();
+
+    await childrenController.listChildren(req, res);
+
+    expect(mockCollection).toHaveBeenCalledWith('children');
+    expect(res.json).toHaveBeenCalledWith([{ id: 'c1', name: 'Kid', age: 10 }]);
   });
 });

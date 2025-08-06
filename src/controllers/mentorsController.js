@@ -12,6 +12,17 @@ exports.createMentor = async (req, res) => {
   }
 };
 
+exports.listMentors = async (req, res) => {
+  try {
+    const snapshot = await db.collection('mentors').get();
+    const mentors = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+    res.json(mentors);
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
+
 exports.assignMentor = async (req, res) => {
   const { mentorId, childId } = req.body;
   try {
@@ -31,7 +42,7 @@ exports.getChildren = async (req, res) => {
       .where('mentorId', '==', mentorId)
       .get();
     const children = snapshot.docs.map((d) => d.data().childId);
-    res.json(children);
+    res.json({ children });
   } catch (err) {
     console.error(err);
     res.status(400).json({ message: err.message });

@@ -28,3 +28,14 @@ exports.getChildProfile = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
+exports.listChildren = async (req, res) => {
+  try {
+    const snapshot = await db.collection('children').get();
+    const children = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+    res.json(children);
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
