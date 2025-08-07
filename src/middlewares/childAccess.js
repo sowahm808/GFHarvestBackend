@@ -1,25 +1,33 @@
 const { admin } = require('../config/firebase');
 
-// Middleware to ensure that the requester is either the child
-// referenced in the request or the parent of that child.
-// childId may be provided as a route param or in the request body.
+/**
+ * Middleware to ensure that the requester is either:
+ * - the child referenced in the request
+ * - the parent of that child
+ * - OR (optional) an admin
+ *
+ * The childId may come from route param or request body.
+ */
 module.exports = async function childAccess(req, res, next) {
   const childId = req.params.childId || req.body.childId;
+
   if (!childId) {
-    return res.status(400).json({ message: 'childId required' });
+    return res.status(400).json({ message: 'Missing required childId' });
   }
 
-  const { role, uid } = req.user || {};
-
-  // Allow a child to access their own resources
-  if (role === 'child') {
-    if (uid === childId) {
-      return next();
-    }
-    return res.status(403).json({ message: 'Forbidden' });
+  const user = req.user;
+  if (!user || !user.uid || !user.role) {
+    return res.status(401).json({ message: 'Unauthorized: missing user info' });
   }
 
-  // Allow a parent to access resources of their own child
+  const { uid, role } = user;
+
+  // ✅ Allow child to access their own resources
+  if (role === 'child' && uid === childId) {
+    return next();
+  }
+
+  // ✅ Allow parent to access resources of their own child
   if (role === 'parent') {
     try {
       const userRecord = await admin.auth().getUser(childId);
@@ -28,10 +36,16 @@ module.exports = async function childAccess(req, res, next) {
         return next();
       }
     } catch (err) {
-      console.error('childAccess error', err);
-      return res.status(400).json({ message: err.message });
+      console.error('❌ Firebase getUser error in childAccess:', err.message);
+      return res.status(500).json({ message: 'Error verifying child-parent link' });
     }
   }
 
-  return res.status(403).json({ message: 'Forbidden' });
+  // ✅ (Optional) Allow admin override
+  if (role === 'admin') {
+    return next();
+  }
+
+  // ❌ All other cases forbidden
+  return res.status(403).json({ message: 'Forbidden: access denied' });
 };
