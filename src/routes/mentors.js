@@ -11,6 +11,9 @@ router.get('/', auth, roleGuard(['admin']), controller.listMentors);
 router.post('/assign', auth, roleGuard(['parent']), controller.assignMentor);
 router.get('/:mentorId/children', auth, controller.getChildren);
 router.post('/records', auth, roleGuard(['mentor']), recordsController.createRecord);
-router.get('/:childId/records', auth, roleGuard(['parent', 'mentor']), recordsController.getRecords);
+// Retrieve mentor records for either a child (parent view) or a mentor (their
+// own records).  The controller inspects the authenticated user's role to
+// decide whether to filter on `childId` or `mentorId`.
+router.get('/:uid/records', auth, roleGuard(['parent', 'mentor']), recordsController.getRecords);
 
 module.exports = router;
