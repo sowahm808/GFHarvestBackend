@@ -31,6 +31,11 @@ describe('Auth middleware', () => {
     expect(res.statusCode).toEqual(401);
   });
 
+  it('should reject unauthorized legacy children list request', async () => {
+    const res = await request(app).get('/api/child');
+    expect(res.statusCode).toEqual(401);
+  });
+
   it('should reject unauthorized mentor assignment', async () => {
     const res = await request(app)
       .post('/api/mentors/assign')
@@ -40,6 +45,11 @@ describe('Auth middleware', () => {
 
   it('should reject unauthorized mentors list request', async () => {
     const res = await request(app).get('/api/mentors');
+    expect(res.statusCode).toEqual(401);
+  });
+
+  it('should reject unauthorized legacy mentors list request', async () => {
+    const res = await request(app).get('/api/mentor');
     expect(res.statusCode).toEqual(401);
   });
 
