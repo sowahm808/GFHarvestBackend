@@ -25,6 +25,20 @@ exports.registerAdmin = async (req, res) => {
   }
 };
 
+exports.setAdminRole = async (req, res) => {
+  const { uid } = req.body;
+  if (!uid) {
+    return res.status(400).json({ message: 'uid is required' });
+  }
+  try {
+    await admin.auth().setCustomUserClaims(uid, { role: 'admin' });
+    res.json({ uid, role: 'admin' });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
+
 exports.addChild = async (req, res) => {
   const { email, password, name, age } = req.body;
   const parentId = req.user.uid;
