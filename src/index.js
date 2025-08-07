@@ -15,6 +15,7 @@ const schoolworkRoutes = require('./routes/schoolwork');
 const projectsRoutes = require('./routes/projects');
 const pointsRoutes = require('./routes/points');
 const groupsRoutes = require('./routes/groups');
+const parentChildRoutes = require('./routes/parentChild');
 
 const app = express();
 
@@ -51,6 +52,7 @@ app.use('/api/schoolwork', schoolworkRoutes);
 app.use('/api/projects', projectsRoutes);
 app.use('/api/points', pointsRoutes);
 app.use('/api/groups', groupsRoutes);
+app.use('/api/parent-child', parentChildRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Kids Faith Tracker API' });
