@@ -23,6 +23,8 @@ app.use('/api/checkins', checkinsRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/mental-status', mentalRoutes);
 app.use('/api/children', childrenRoutes);
+// Support legacy singular `/api/child` paths used by older clients
+app.use('/api/child', childrenRoutes);
 app.use('/api/mentors', mentorsRoutes);
 // Support legacy singular `/api/mentor` paths used by older clients
 app.use('/api/mentor', mentorsRoutes);
