@@ -9,5 +9,6 @@ router.post('/register-parent', usersController.registerParent);
 router.post('/register-admin', usersController.registerAdmin);
 router.post('/add-child', auth, roleGuard(['parent']), usersController.addChild);
 router.get('/me', auth, usersController.getMe);
+router.post('/set-admin', auth, roleGuard(['admin']), usersController.setAdminRole);
 
 module.exports = router;

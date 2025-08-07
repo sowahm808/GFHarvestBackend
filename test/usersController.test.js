@@ -46,3 +46,19 @@ describe('usersController.addChild', () => {
     expect(res.json).toHaveBeenCalledWith({ uid: 'c1', email: 'child@example.com' });
   });
 });
+
+describe('usersController.setAdminRole', () => {
+  beforeEach(() => {
+    mockSetClaims.mockClear();
+  });
+
+  it('sets admin role for given uid', async () => {
+    const req = { body: { uid: 'admin1' } };
+    const res = mockResponse();
+
+    await usersController.setAdminRole(req, res);
+
+    expect(mockSetClaims).toHaveBeenCalledWith('admin1', { role: 'admin' });
+    expect(res.json).toHaveBeenCalledWith({ uid: 'admin1', role: 'admin' });
+  });
+});
