@@ -1,3 +1,4 @@
+// routes/mentors.js
 const express = require('express');
 const auth = require('../middlewares/authMiddleware');
 const roleGuard = require('../middlewares/roleGuard');
@@ -6,9 +7,11 @@ const recordsController = require('../controllers/mentorRecordsController');
 
 const router = express.Router();
 
-// Create mentor (admin only)
-router.post('/', auth, roleGuard(['admin']), controller.createMentor);         // Preferred RESTful
-router.post('/create', auth, roleGuard(['admin']), controller.createMentor);  // Legacy support
+// Health check (safe to leave in prod)
+router.get('/ping', (_req, res) => res.json({ ok: true, route: 'mentors' }));
+
+// Create mentor (admin only) — RESTful
+router.post('/', auth, roleGuard(['admin']), controller.createMentor);
 
 // List mentors (admin only)
 router.get('/', auth, roleGuard(['admin']), controller.listMentors);
@@ -19,14 +22,8 @@ router.post('/assign', auth, roleGuard(['parent']), controller.assignMentor);
 // Get children assigned to a mentor
 router.get('/:mentorId/children', auth, controller.getChildren);
 
-// Create a mentor record (mentor only)
+// Mentor records
 router.post('/records', auth, roleGuard(['mentor']), recordsController.createRecord);
-
-// Get mentor records for a child or mentor based on role
 router.get('/:uid/records', auth, roleGuard(['parent', 'mentor']), recordsController.getRecords);
-
-router.get('/ping', (req, res) => {
-  res.json({ status: 'mentors route active' });
-});
 
 module.exports = router;

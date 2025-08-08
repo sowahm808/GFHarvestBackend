@@ -19,31 +19,39 @@ const parentChildRoutes = require('./routes/parentChild');
 
 const app = express();
 
-// Configure CORS to allow requests from the production frontend and handle
-// preflight requests.  This ensures the `Access-Control-Allow-Origin` header
-// is present on all responses.
+// Allow only these origins
 const allowedOrigins = [
   'https://kidsfaithtracker.netlify.app',
-  'http://localhost:3000', // local development
+  'http://localhost:3000'
 ];
+
+// Dynamic CORS origin check
 const corsOptions = {
-  origin: allowedOrigins,
-  optionsSuccessStatus: 200,
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true, // allow cookies/auth headers if needed
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
-// Explicitly handle preflight requests for all routes
-app.options('*', cors(corsOptions));
+app.options('*', cors(corsOptions)); // Preflight for all routes
 
 app.use(express.json());
+
+// Routes
 app.use('/api/checkins', checkinsRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/mental-status', mentalRoutes);
 app.use('/api/children', childrenRoutes);
-// Support legacy singular `/api/child` paths used by older clients
 app.use('/api/child', childrenRoutes);
 app.use('/api/mentors', mentorsRoutes);
-// Support legacy singular `/api/mentor` paths used by older clients
 app.use('/api/mentor', mentorsRoutes);
 app.use('/api/quizzes', quizzesRoutes);
 app.use('/api/bible-questions', bibleQuestionsRoutes);
