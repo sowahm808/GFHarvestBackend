@@ -48,6 +48,13 @@ describe('Auth middleware', () => {
     expect(res.statusCode).toEqual(401);
   });
 
+  it('should reject unauthorized mentor creation', async () => {
+    const res = await request(app)
+      .post('/api/mentors')
+      .send({ name: 'Test Mentor', email: 'm@example.com', phone: '123' });
+    expect(res.statusCode).toEqual(401);
+  });
+
   it('should reject unauthorized legacy mentors list request', async () => {
     const res = await request(app).get('/api/mentor');
     expect(res.statusCode).toEqual(401);
