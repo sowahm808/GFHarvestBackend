@@ -49,10 +49,9 @@ app.use(express.json());
 app.use('/api/checkins', checkinsRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/mental-status', mentalRoutes);
+// Primary routes
 app.use('/api/children', childrenRoutes);
-app.use('/api/child', childrenRoutes);
 app.use('/api/mentors', mentorsRoutes);
-app.use('/api/mentor', mentorsRoutes);
 app.use('/api/quizzes', quizzesRoutes);
 app.use('/api/bible-questions', bibleQuestionsRoutes);
 app.use('/api/essays', essaysRoutes);
