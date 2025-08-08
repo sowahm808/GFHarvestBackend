@@ -20,14 +20,21 @@ const parentChildRoutes = require('./routes/parentChild');
 const app = express();
 
 // Configure CORS to allow requests from the production frontend and handle
-// preflight requests.  This ensures the `Access-Control-Allow-Origin` header
-// is present on all responses.
+// preflight requests so that browsers see the required
+// `Access-Control-Allow-Origin` header on every response.
 const allowedOrigins = [
   'https://kidsfaithtracker.netlify.app',
   'http://localhost:3000', // local development
 ];
 const corsOptions = {
-  origin: allowedOrigins,
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error('Not allowed by CORS'), false);
+  },
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   optionsSuccessStatus: 200,
 };
 
