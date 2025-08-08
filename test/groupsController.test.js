@@ -12,7 +12,7 @@ const mockFirestore = {
 
 jest.mock('../src/config/firebase', () => ({
   firestore: mockFirestore,
-  admin: {},
+  admin: { firestore: { FieldValue: { serverTimestamp: jest.fn() } } },
 }));
 
 const groupsController = require('../src/controllers/groupsController');
@@ -32,18 +32,45 @@ describe('groupsController.createGroup', () => {
 
   it('creates a group', async () => {
     addMock.mockResolvedValue({ id: 'g1' });
-    const req = { body: { name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] } };
+    const req = {
+      body: { name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] },
+      user: { uid: 'u1' },
+    };
     const res = mockResponse();
 
     await groupsController.createGroup(req, res);
 
-    expect(addMock).toHaveBeenCalledWith({ name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] });
+    expect(addMock).toHaveBeenCalledWith(
+      expect.objectContaining({
+        name: 'Test',
+        type: 'school',
+        ageGroup: '10-12',
+        members: ['c1'],
+        mentorId: null,
+        createdBy: 'u1',
+      })
+    );
     expect(res.status).toHaveBeenCalledWith(201);
-    expect(res.json).toHaveBeenCalledWith({ id: 'g1', name: 'Test', type: 'school', ageGroup: '10-12', members: ['c1'] });
+    expect(res.json).toHaveBeenCalledWith({
+      id: 'g1',
+      name: 'Test',
+      type: 'school',
+      ageGroup: '10-12',
+      members: ['c1'],
+      mentorId: null,
+    });
   });
 
   it('rejects when group exceeds max members', async () => {
-    const req = { body: { name: 'Big', type: 'school', ageGroup: '10-12', members: ['1','2','3','4','5','6'] } };
+    const req = {
+      body: {
+        name: 'Big',
+        type: 'school',
+        ageGroup: '10-12',
+        members: ['1', '2', '3', '4', '5', '6'],
+      },
+      user: { uid: 'u1' },
+    };
     const res = mockResponse();
 
     await groupsController.createGroup(req, res);
@@ -53,7 +80,10 @@ describe('groupsController.createGroup', () => {
   });
 
   it('rejects invalid group type', async () => {
-    const req = { body: { name: 'Test', type: 'invalid', ageGroup: '10-12' } };
+    const req = {
+      body: { name: 'Test', type: 'invalid', ageGroup: '10-12' },
+      user: { uid: 'u1' },
+    };
     const res = mockResponse();
 
     await groupsController.createGroup(req, res);

@@ -34,7 +34,7 @@ npm test
 - `POST /api/mental-status` – Submit a mental status entry.
 - `GET  /api/mental-status/:childId` – Get mental status logs for a child.
 - `GET  /api/children/:childId` – Get a child's profile, age and mentors.
-- `POST /api/mentors/create` – Add a mentor profile (admin only).
+- `POST /api/mentors` – Add a mentor profile (admin only). Legacy support: `POST /api/mentors/create`.
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 - `POST /api/mentors/records` – Create a mentor progress note.
