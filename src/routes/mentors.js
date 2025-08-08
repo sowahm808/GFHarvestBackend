@@ -10,20 +10,28 @@ const router = express.Router();
 // Health check (safe to leave in prod)
 router.get('/ping', (_req, res) => res.json({ ok: true, route: 'mentors' }));
 
-// Create mentor (admin only) — RESTful
-router.post('/', auth, roleGuard(['admin']), controller.createMentor);
+// All routes below require authentication
+router.use(auth);
 
-// List mentors (admin only)
-router.get('/', auth, roleGuard(['admin']), controller.listMentors);
+const adminOnly = roleGuard(['admin']);
+const parentOnly = roleGuard(['parent']);
+const mentorOnly = roleGuard(['mentor']);
+const parentOrMentor = roleGuard(['parent', 'mentor']);
+
+// Mentor management (admin only)
+router
+  .route('/')
+  .post(adminOnly, controller.createMentor)
+  .get(adminOnly, controller.listMentors);
 
 // Assign mentor to child (parent only)
-router.post('/assign', auth, roleGuard(['parent']), controller.assignMentor);
+router.post('/assign', parentOnly, controller.assignMentor);
 
 // Get children assigned to a mentor
-router.get('/:mentorId/children', auth, controller.getChildren);
+router.get('/:mentorId/children', controller.getChildren);
 
 // Mentor records
-router.post('/records', auth, roleGuard(['mentor']), recordsController.createRecord);
-router.get('/:uid/records', auth, roleGuard(['parent', 'mentor']), recordsController.getRecords);
+router.post('/records', mentorOnly, recordsController.createRecord);
+router.get('/:uid/records', parentOrMentor, recordsController.getRecords);
 
 module.exports = router;
