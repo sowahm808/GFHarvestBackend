@@ -237,10 +237,36 @@ paths:
       responses:
         '200':
           description: Array of entries
-  /api/mentors/create:
+  /api/mentors:
     post:
       summary: Create mentor profile
-      description: Admin role required.
+      description: Admin role required. Legacy path `/api/mentors/create` is also supported.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                phone:
+                  type: string
+              required:
+                - name
+                - email
+                - phone
+      responses:
+        '201':
+          description: Mentor created
+  /api/mentors/create:
+    post:
+      summary: Create mentor profile (legacy)
+      description: Admin role required. Prefer POST `/api/mentors`.
       security:
         - bearerAuth: []
       requestBody:
