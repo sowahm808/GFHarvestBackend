@@ -25,4 +25,8 @@ router.post('/records', auth, roleGuard(['mentor']), recordsController.createRec
 // Get mentor records for a child or mentor based on role
 router.get('/:uid/records', auth, roleGuard(['parent', 'mentor']), recordsController.getRecords);
 
+router.get('/ping', (req, res) => {
+  res.json({ status: 'mentors route active' });
+});
+
 module.exports = router;
