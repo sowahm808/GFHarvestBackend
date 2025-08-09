@@ -30,9 +30,10 @@ exports.getRecords = async (req, res) => {
   const { uid } = req.params; // uid can be either a childId or mentorId
   try {
     // Determine which field to filter on based on the caller's role. Parents
-    // should receive records for their children, mentors should receive the
-    // records they authored.
-    const field = req.user && req.user.role === 'mentor' ? 'mentorId' : 'childId';
+    // should receive records for their children, mentors (and admins viewing
+    // mentor records) should receive the records they authored.
+    const role = req.user && req.user.role;
+    const field = role === 'mentor' || role === 'admin' ? 'mentorId' : 'childId';
     const snapshot = await db
       .collection('mentorRecords')
       .where(field, '==', uid)
