@@ -5,10 +5,11 @@ This repository contains a Node.js Express backend integrated with Firebase Admi
 ## Setup
 
 1. Clone this repository and copy `.env.example` to `.env`.
-   - `GOOGLE_APPLICATION_CREDENTIALS` should point to your Firebase service account JSON file.
+   - Either set `FIREBASE_SERVICE_ACCOUNT` to the JSON for your service account (optionally base64 encoded)
+     **or** set `GOOGLE_APPLICATION_CREDENTIALS` to the path of that JSON file.
    - `FIREBASE_PROJECT_ID` must match your Firebase project.
    - `PORT` sets the Express port (defaults to 3000).
-2. Create a Firebase service account and download the credentials JSON file referenced above.
+2. Create a Firebase service account and provide its credentials using one of the methods above.
 3. Install dependencies with `npm install` (requires internet access).
 4. Start the development server:
 

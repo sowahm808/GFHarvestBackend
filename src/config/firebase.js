@@ -7,21 +7,34 @@ require('dotenv').config();
 let firebaseServices = {};
 
 if (process.env.NODE_ENV !== 'test') {
-  const serviceAccountPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+  let serviceAccount;
 
-  if (!serviceAccountPath) {
-    throw new Error(
-      'GOOGLE_APPLICATION_CREDENTIALS is not set. Create a .env file and specify your Firebase key path.'
-    );
+  if (process.env.FIREBASE_SERVICE_ACCOUNT) {
+    const raw = process.env.FIREBASE_SERVICE_ACCOUNT;
+    try {
+      serviceAccount = JSON.parse(raw);
+    } catch (jsonErr) {
+      try {
+        const decoded = Buffer.from(raw, 'base64').toString('utf8');
+        serviceAccount = JSON.parse(decoded);
+      } catch (decodeErr) {
+        throw new Error('FIREBASE_SERVICE_ACCOUNT is not valid JSON or base64-encoded JSON');
+      }
+    }
+  } else {
+    const serviceAccountPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+    if (!serviceAccountPath) {
+      throw new Error(
+        'Set FIREBASE_SERVICE_ACCOUNT or GOOGLE_APPLICATION_CREDENTIALS to configure Firebase'
+      );
+    }
+
+    const resolvedPath = path.resolve(serviceAccountPath);
+    if (!fs.existsSync(resolvedPath)) {
+      throw new Error(`Firebase service account file not found at: ${resolvedPath}`);
+    }
+    serviceAccount = require(resolvedPath);
   }
-
-  const resolvedPath = path.resolve(serviceAccountPath);
-
-  if (!fs.existsSync(resolvedPath)) {
-    throw new Error(`Firebase service account file not found at: ${resolvedPath}`);
-  }
-
-  const serviceAccount = require(resolvedPath);
 
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
@@ -32,7 +45,7 @@ if (process.env.NODE_ENV !== 'test') {
     auth: admin.auth(),
     firestore: admin.firestore(),
     messaging: admin.messaging?.(),
-    storage: admin.storage?.()
+    storage: admin.storage?.(),
   };
 }
 
