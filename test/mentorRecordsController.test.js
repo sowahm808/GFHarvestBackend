@@ -47,5 +47,16 @@ describe('mentorRecordsController.getRecords', () => {
     expect(mockWhere).toHaveBeenCalledWith('mentorId', '==', 'mentor1');
     expect(res.json).toHaveBeenCalledWith([]);
   });
+
+  it('queries by mentorId for admins', async () => {
+    mockGet.mockResolvedValue({ docs: [] });
+    const req = { params: { uid: 'mentor1' }, user: { role: 'admin' } };
+    const res = mockResponse();
+
+    await controller.getRecords(req, res);
+
+    expect(mockWhere).toHaveBeenCalledWith('mentorId', '==', 'mentor1');
+    expect(res.json).toHaveBeenCalledWith([]);
+  });
 });
 

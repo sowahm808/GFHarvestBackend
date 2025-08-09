@@ -16,7 +16,7 @@ router.use(auth);
 const adminOnly = roleGuard(['admin']);
 const parentOnly = roleGuard(['parent']);
 const mentorOnly = roleGuard(['mentor']);
-const parentOrMentor = roleGuard(['parent', 'mentor']);
+const parentMentorOrAdmin = roleGuard(['parent', 'mentor', 'admin']);
 
 // Mentor management (admin only)
 router
@@ -32,6 +32,6 @@ router.get('/:mentorId/children', controller.getChildren);
 
 // Mentor records
 router.post('/records', mentorOnly, recordsController.createRecord);
-router.get('/:uid/records', parentOrMentor, recordsController.getRecords);
+router.get('/:uid/records', parentMentorOrAdmin, recordsController.getRecords);
 
 module.exports = router;
