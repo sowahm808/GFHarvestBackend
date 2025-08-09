@@ -20,7 +20,7 @@ paths:
   /api/users/add-child:
     post:
       summary: Add a child account
-      description: Parent role required.
+      description: "Parent role required. Creates the child using the Firebase Admin SDK so the parent remains signed in and the Firestore write occurs in a privileged environment."
       security:
         - bearerAuth: []
       requestBody:

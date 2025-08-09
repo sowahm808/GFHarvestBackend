@@ -1,15 +1,14 @@
-const mockSet = jest.fn();
-const mockDoc = jest.fn(() => ({ set: mockSet }));
-const mockCollection = jest.fn(() => ({ doc: mockDoc }));
-
-const mockCreateUser = jest.fn().mockResolvedValue({ uid: 'c1', email: 'child@example.com' });
 const mockSetClaims = jest.fn().mockResolvedValue();
 
-jest.mock('../src/config/firebase', () => ({
-  firestore: { collection: mockCollection },
-  admin: { auth: () => ({ createUser: mockCreateUser, setCustomUserClaims: mockSetClaims }) },
+jest.mock('../src/services/childAccountService', () => ({
+  createChildAccount: jest.fn(),
 }));
 
+jest.mock('../src/config/firebase', () => ({
+  admin: { auth: () => ({ setCustomUserClaims: mockSetClaims }) },
+}));
+
+const { createChildAccount } = require('../src/services/childAccountService');
 const usersController = require('../src/controllers/usersController');
 
 function mockResponse() {
@@ -21,14 +20,11 @@ function mockResponse() {
 
 describe('usersController.addChild', () => {
   beforeEach(() => {
-    mockSet.mockReset();
-    mockDoc.mockClear();
-    mockCollection.mockClear();
-    mockCreateUser.mockClear();
-    mockSetClaims.mockClear();
+    createChildAccount.mockReset();
   });
 
-  it('creates child account and stores profile', async () => {
+  it('creates child account using service', async () => {
+    createChildAccount.mockResolvedValue({ uid: 'c1', email: 'child@example.com' });
     const req = {
       body: { email: 'child@example.com', password: 'pass', name: 'Kid', age: 9 },
       user: { uid: 'parent1' },
@@ -37,11 +33,13 @@ describe('usersController.addChild', () => {
 
     await usersController.addChild(req, res);
 
-    expect(mockCreateUser).toHaveBeenCalledWith({ email: 'child@example.com', password: 'pass', displayName: 'Kid' });
-    expect(mockSetClaims).toHaveBeenCalledWith('c1', { role: 'child', parentId: 'parent1' });
-    expect(mockCollection).toHaveBeenCalledWith('children');
-    expect(mockDoc).toHaveBeenCalledWith('c1');
-    expect(mockSet).toHaveBeenCalledWith({ name: 'Kid', age: 9, parentId: 'parent1' });
+    expect(createChildAccount).toHaveBeenCalledWith({
+      email: 'child@example.com',
+      password: 'pass',
+      name: 'Kid',
+      age: 9,
+      parentId: 'parent1',
+    });
     expect(res.status).toHaveBeenCalledWith(201);
     expect(res.json).toHaveBeenCalledWith({ uid: 'c1', email: 'child@example.com' });
   });

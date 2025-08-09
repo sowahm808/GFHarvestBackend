@@ -28,7 +28,7 @@ npm test
 - `POST /api/users/register-parent` – Create a parent account.
 - `POST /api/users/register-admin` – Create an admin account.
 - `POST /api/users/set-admin` – Grant admin role to a user (admin only).
-- `POST /api/users/add-child` – Add a child account with name and age (parent only).
+- `POST /api/users/add-child` – Add a child account with name and age (parent only). Uses the Firebase Admin SDK so the parent remains signed in while the server writes the child profile.
 - `GET  /api/users/me` – Retrieve the current user's profile.
 - `POST /api/checkins` – Submit a check-in entry.
 - `GET  /api/checkins/:childId` – Get check-ins for a specific child.
