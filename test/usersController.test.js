@@ -60,3 +60,19 @@ describe('usersController.setAdminRole', () => {
     expect(res.json).toHaveBeenCalledWith({ uid: 'admin1', role: 'admin' });
   });
 });
+
+describe('usersController.assignRole', () => {
+  beforeEach(() => {
+    mockSetClaims.mockClear();
+  });
+
+  it('assigns specified role to user', async () => {
+    const req = { body: { uid: 'user1', role: 'mentor' } };
+    const res = mockResponse();
+
+    await usersController.assignRole(req, res);
+
+    expect(mockSetClaims).toHaveBeenCalledWith('user1', { role: 'mentor' });
+    expect(res.json).toHaveBeenCalledWith({ uid: 'user1', role: 'mentor' });
+  });
+});
