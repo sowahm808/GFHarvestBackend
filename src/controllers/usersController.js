@@ -39,6 +39,24 @@ exports.setAdminRole = async (req, res) => {
   }
 };
 
+exports.assignRole = async (req, res) => {
+  const { uid, role } = req.body;
+  const allowed = ['mentor', 'child', 'parent'];
+  if (!uid || !role) {
+    return res.status(400).json({ message: 'uid and role are required' });
+  }
+  if (!allowed.includes(role)) {
+    return res.status(400).json({ message: 'Invalid role' });
+  }
+  try {
+    await admin.auth().setCustomUserClaims(uid, { role });
+    res.json({ uid, role });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: err.message });
+  }
+};
+
 exports.addChild = async (req, res) => {
   const { email, password, name, age } = req.body;
   const parentId = req.user.uid;
