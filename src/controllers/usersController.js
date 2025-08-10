@@ -57,6 +57,22 @@ exports.assignRole = async (req, res) => {
   }
 };
 
+exports.listUsers = async (req, res) => {
+  try {
+    const result = await admin.auth().listUsers();
+    const users = result.users.map((u) => ({
+      uid: u.uid,
+      email: u.email,
+      displayName: u.displayName,
+      role: u.customClaims?.role || null,
+    }));
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: err.message });
+  }
+};
+
 exports.addChild = async (req, res) => {
   const { email, password, name, age } = req.body;
   const parentId = req.user.uid;
