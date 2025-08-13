@@ -1,0 +1,173 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleType {
+  OWNER
+  ADMIN
+  SELLER
+  VIEWER
+}
+
+enum Plan {
+  STARTER
+  PRO
+  ENTERPRISE
+}
+
+enum LeadStage {
+  NEW
+  QUALIFIED
+  DISCOVERY
+  PROPOSAL
+  WON
+  LOST
+}
+
+enum DealStage {
+  DISCOVERY
+  PROPOSAL
+  SENT
+  NEGOTIATION
+  WON
+  LOST
+}
+
+enum ProposalStatus {
+  DRAFT
+  SENT
+  VIEWED
+  SIGNED
+  DECLINED
+}
+
+enum SenderType {
+  USER
+  PROSPECT
+  SYSTEM
+}
+
+enum PaymentStatus {
+  PENDING
+  REQUIRES_ACTION
+  SUCCEEDED
+  CANCELED
+}
+
+model Account {
+  id        String        @id @default(cuid())
+  name      String
+  plan      Plan          @default(STARTER)
+  users     UserAccount[]
+  leads     Lead[]
+  deals     Deal[]
+  proposals Proposal[]
+  payments  Payment[]
+  createdAt DateTime      @default(now())
+}
+
+model User {
+  id        String        @id @default(cuid())
+  email     String        @unique
+  name      String?
+  avatarUrl String?
+  accounts  UserAccount[]
+  createdAt DateTime      @default(now())
+}
+
+model UserAccount {
+  userId    String
+  accountId String
+  role      RoleType      @default(OWNER)
+  user      User          @relation(fields: [userId], references: [id])
+  account   Account       @relation(fields: [accountId], references: [id])
+  @@id([userId, accountId])
+}
+
+model Lead {
+  id        String     @id @default(cuid())
+  accountId String
+  firstName String
+  lastName  String?
+  email     String?
+  phone     String?
+  company   String?
+  source    String?
+  stage     LeadStage  @default(NEW)
+  score     Int        @default(0)
+  tags      String[]
+  notes     String?
+  ownerId   String?
+  account   Account    @relation(fields: [accountId], references: [id])
+  deals     Deal[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Deal {
+  id        String     @id @default(cuid())
+  accountId String
+  name      String
+  amount    Int
+  currency  String     @default("USD")
+  stage     DealStage  @default(DISCOVERY)
+  leadId    String?
+  ownerId   String?
+  proposal  Proposal?
+  account   Account    @relation(fields: [accountId], references: [id])
+  lead      Lead?      @relation(fields: [leadId], references: [id])
+  payments  Payment[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Proposal {
+  id              String          @id @default(cuid())
+  accountId       String
+  dealId          String?
+  title           String
+  status          ProposalStatus  @default(DRAFT)
+  docUrl          String?
+  signEnvelopeId  String?
+  sentAt          DateTime?
+  viewedAt        DateTime?
+  signedAt        DateTime?
+  account         Account         @relation(fields: [accountId], references: [id])
+  deal            Deal?           @relation(fields: [dealId], references: [id])
+}
+
+model Payment {
+  id                     String         @id @default(cuid())
+  accountId              String
+  dealId                 String
+  stripePaymentIntentId  String
+  amount                 Int
+  currency               String        @default("USD")
+  status                 PaymentStatus @default(PENDING)
+  createdAt              DateTime      @default(now())
+  account                Account       @relation(fields: [accountId], references: [id])
+  deal                   Deal          @relation(fields: [dealId], references: [id])
+}
+
+model Activity {
+  id        String   @id @default(cuid())
+  accountId String?
+  actorId   String?
+  type      String
+  targetId  String?
+  meta      Json
+  createdAt DateTime @default(now())
+}
+
+model WebhookEvent {
+  id         String   @id @default(cuid())
+  provider   String
+  raw        Json
+  processed  Boolean  @default(false)
+  receivedAt DateTime @default(now())
+}
