@@ -8,7 +8,8 @@
     "dev": "nodemon src/index.js",
     "test": "jest",
     "weekly-summary": "node src/jobs/weeklySummary.js",
-    "send-reminders": "node src/jobs/reminderJobs.js"
+    "send-reminders": "node src/jobs/reminderJobs.js",
+    "prayer-cleanup": "node src/jobs/prayerCleanup.js"
   },
   "repository": {
     "type": "git",
