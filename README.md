@@ -38,6 +38,11 @@ npm test
 - `GET  /api/children/:childId` – Get a child's profile, age and mentors.
 - `POST /api/mentors` – Add a mentor profile (admin only). Legacy support: `POST /api/mentors/create`.
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
+- `POST /api/churches` – Register a church with its logo.
+- `GET  /api/churches` – List registered churches.
+- `POST /api/prayer-requests` – Submit a prayer request with a user ID.
+- `GET  /api/prayer-requests` – List all prayer requests.
+- `PATCH /api/prayer-requests/:id/prayed` – Mark a request as prayed for.
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 - `POST /api/mentors/records` – Create a mentor progress note.
 - `GET  /api/mentors/:childId/records` – Get notes for a child.
