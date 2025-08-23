@@ -40,8 +40,11 @@ npm test
 - `POST /api/mentors/assign` – Assign a mentor to a child (parent only).
 - `POST /api/churches` – Register a church with its logo.
 - `GET  /api/churches` – List registered churches.
+- `GET  /api/churches/:id` – Retrieve a church profile.
+- `PATCH /api/churches/:id` – Update church name or logo.
 - `POST /api/prayer-requests` – Submit a prayer request with a user ID.
-- `GET  /api/prayer-requests` – List all prayer requests.
+- `GET  /api/prayer-requests` – List all prayer requests (filter by \`userId\` with query parameter).
+- `PATCH /api/prayer-requests/:id` – Update a prayer request's details.
 - `PATCH /api/prayer-requests/:id/prayed` – Mark a request as prayed for.
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 - `POST /api/mentors/records` – Create a mentor progress note.
@@ -78,6 +81,10 @@ This project uses **Jest**. After installing dependencies run:
 ```bash
 npm test
 ```
+
+## Maintenance Scripts
+
+- `npm run prayer-cleanup` – Remove prayer requests that were marked as prayed more than 7 days ago.
 
 ## Roadmap
 
