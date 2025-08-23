@@ -42,10 +42,10 @@ npm test
 - `GET  /api/churches` – List registered churches.
 - `GET  /api/churches/:id` – Retrieve a church profile.
 - `PATCH /api/churches/:id` – Update church name or logo.
-- `POST /api/prayer-requests` – Submit a prayer request with a user ID.
-- `GET  /api/prayer-requests` – List all prayer requests (filter by \`userId\` with query parameter).
-- `PATCH /api/prayer-requests/:id` – Update a prayer request's details.
-- `PATCH /api/prayer-requests/:id/prayed` – Mark a request as prayed for.
+- `POST /api/prayer-requests` – Submit a prayer request with a user ID. Alias: `POST /api/prayerRequests`.
+- `GET  /api/prayer-requests` – List all prayer requests (filter by \`userId\` with query parameter). Alias: `GET /api/prayerRequests`.
+- `PATCH /api/prayer-requests/:id` – Update a prayer request's details. Alias: `PATCH /api/prayerRequests/:id`.
+- `PATCH /api/prayer-requests/:id/prayed` – Mark a request as prayed for. Alias: `PATCH /api/prayerRequests/:id/prayed`.
 - `GET  /api/mentors/:mentorId/children` – List children assigned to a mentor.
 - `POST /api/mentors/records` – Create a mentor progress note.
 - `GET  /api/mentors/:childId/records` – Get notes for a child.

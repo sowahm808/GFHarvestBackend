@@ -64,6 +64,8 @@ app.use('/api/groups', groupsRoutes);
 app.use('/api/parent-child', parentChildRoutes);
 app.use('/api/churches', churchesRoutes);
 app.use('/api/prayer-requests', prayerRequestsRoutes);
+// Support camelCase path used by some clients
+app.use('/api/prayerRequests', prayerRequestsRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Kids Faith Tracker API' });
