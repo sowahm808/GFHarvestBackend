@@ -5,6 +5,7 @@ const usersController = require('../controllers/usersController');
 
 const router = express.Router();
 
+router.post('/register', usersController.register);
 router.post('/register-parent', usersController.registerParent);
 router.post('/register-admin', usersController.registerAdmin);
 router.post('/add-child', auth, roleGuard(['parent']), usersController.addChild);
@@ -12,5 +13,7 @@ router.get('/me', auth, usersController.getMe);
 router.post('/set-admin', auth, roleGuard(['admin']), usersController.setAdminRole);
 router.post('/assign-role', auth, roleGuard(['admin']), usersController.assignRole);
 router.get('/', auth, roleGuard(['admin']), usersController.listUsers);
+router.get('/pending', auth, roleGuard(['admin']), usersController.listPendingUsers);
+router.post('/approve', auth, roleGuard(['admin']), usersController.approveUser);
 
 module.exports = router;
