@@ -3,6 +3,33 @@ info:
   title: Kids Faith Tracker API
   version: 1.0.0
 paths:
+  /api/users/register:
+    post:
+      summary: Register a user with requested role
+      description: Creates a user with a pending role requiring admin approval.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+                name:
+                  type: string
+                role:
+                  type: string
+              required:
+                - email
+                - password
+                - name
+                - role
+      responses:
+        '201':
+          description: Created
   /api/users/register-parent:
     post:
       summary: Register a parent account
@@ -55,6 +82,35 @@ paths:
       responses:
         '200':
           description: User profile
+  /api/users/pending:
+    get:
+      summary: List users pending approval
+      description: Admin role required.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Array of pending users
+  /api/users/approve:
+    post:
+      summary: Approve a pending user
+      description: Admin role required.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                uid:
+                  type: string
+              required:
+                - uid
+      responses:
+        '200':
+          description: User approved
   /api/checkins:
     post:
       summary: Submit a daily check-in
